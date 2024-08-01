@@ -5,4 +5,4 @@ date: "2024-08-02"
 status: "Not Started"
 ---
 
-foo bar
+https://nextjs.org/docs/pages/building-your-application/configuring/typescript

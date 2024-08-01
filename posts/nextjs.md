@@ -9,17 +9,34 @@ Highlights from https://nextjs.org/learn-pages-router
 
 ### Create a Next.js App
 
+TODO
+
 ### Navigate Between Pages
+
+TODO
 
 ### Assets, Metadata, and CSS
 
+TODO
+
 ### Pre-rendering and Data Fetching
 
-### Dynamic Routes
+By default, Next.js pre-renders every page. This means that Next.js generates HTML for each page in advance, instead of having it all done by client-side JavaScript. Pre-rendering can result in better performance and SEO.
 
-### Page Path Depends on External Data
+Each generated HTML is associated with minimal JavaScript code necessary for that page. When a page is loaded by the browser, its JavaScript code runs and makes the page fully interactive. (This process is called hydration.)
 
-### Implement getStaticPaths
+You can show that pre-rendering is happening because the site renders even when you disable JavaScript in your browser (unlike creat-react-app).
+
+Next.js has two forms of pre-rendering: Static Generation and Server-side Rendering. The difference is in when it generates the HTML for a page.
+
+- Static Generation is the pre-rendering method that generates the HTML at build time. The pre-rendered HTML is then reused on each request.
+- Server-side Rendering is the pre-rendering method that generates the HTML on each request.
+
+### Static Generation
+
+https://nextjs.org/docs/basic-features/pages#static-generation-recommended
+
+#### Implement getStaticPaths
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
@@ -36,9 +53,19 @@ On the other hand, Static Generation is **not** a good idea if you cannot pre-re
 
 In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
 
-### Implement getStaticProps
+#### Implement getStaticProps
 
-### Dynamic Routes Details
+getStaticProps only runs on the server-side. It will never run on the client-side. It won’t even be included in the JS bundle for the browser. That means you can write code such as direct database queries without them being sent to browsers. Because it’s meant to be run at build time, you won’t be able to use data that’s only available during request time, such as query parameters or HTTP headers.
+
+getStaticProps can only be exported from a page. You can’t export it from non-page files. One of the reasons for this restriction is that React needs to have all the required data before the page is rendered.
+
+### Dynamic Routes
+
+TODO
+
+### Page Path Depends on External Data
+
+TODO
 
 ### API Routes
 

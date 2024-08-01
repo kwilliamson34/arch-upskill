@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <section className="mb-8">
-        <h2 className="container text-2xl mb-4">Daily Tasks</h2>
+        <h2 className="container mb-4">Daily Tasks</h2>
         <ol className="list-decimal ml-8">
           <li>Learning goal</li>
           <li>
@@ -50,7 +50,7 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section>
-        <h2 className="container text-2xl mb-4">Learning Goals</h2>
+        <h2 className="container mb-4">Learning Goals</h2>
         <div className="flex flex-wrap">
           {allPostsData.map(({ id, date, title, subtitle, status }) => (
             <Link
@@ -59,8 +59,6 @@ export default function Home({ allPostsData }) {
               className={clsx(utilStyles.card, "mr-4 mb-4")}
             >
               <div>
-                {title}
-                &nbsp;-&nbsp;
                 <FontAwesomeIcon
                   icon={
                     status === "In Progress"
@@ -69,7 +67,15 @@ export default function Home({ allPostsData }) {
                       ? faCheck
                       : faQuestion
                   }
+                  color={
+                    status === "In Progress"
+                      ? "blue"
+                      : status === "Done"
+                      ? "green"
+                      : "auto"
+                  }
                 />
+                &nbsp;{title}
                 <p className="text-sm italic">{subtitle}</p>
                 <p className="text-sm text-gray-500">
                   <Date dateString={date} />

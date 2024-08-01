@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { clsx } from "clsx";
 
-const name = "Katy Williamson";
+const name = "Katy Williamson's Arch Upskill Guide";
 export const siteTitle = "Katy's Next.js Learning Website";
 
 export default function Layout({ children, home }) {
@@ -54,7 +54,7 @@ export default function Layout({ children, home }) {
               width={108}
               alt="Katy's face"
             />
-            <h2 className="text-xl mt-2">{name}</h2>
+            <h2 className="mt-2">{name}</h2>
             <div className={styles.backToHome}>
               <Link href="/">← Back to home</Link>
             </div>

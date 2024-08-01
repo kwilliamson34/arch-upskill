@@ -26,8 +26,8 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <h1 className="text-4xl">{postData.title}</h1>
-      <h2 className="text-lg italic text-gray-500 mb-4">
+      <h1>{postData.title}</h1>
+      <h2 className="mb-4">
         <Date dateString={postData.date} />
       </h2>
       <div

@@ -2,16 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles */
+@layer base {
+  h1 {
+    @apply text-4xl;
+    @apply leading-relaxed;
+  }
+  h2 {
+    @apply text-xl;
+    @apply text-gray-700;
+  }
+  h3 {
+    @apply text-lg;
+    @apply font-mono;
+    @apply text-gray-700;
+    @apply bg-gray-100;
+    @apply rounded;
+    padding: 0 0.75rem;
+    margin-top: 1.5rem;
+  }
+}
+
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: auto;
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 1200px;
 }
 
 p {
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 
 a {
@@ -47,18 +69,4 @@ ul {
 
 li {
   margin-left: 2rem;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-style: italic;
-  font-family: monospace;
 }
