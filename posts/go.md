@@ -1,7 +1,7 @@
 ---
 title: "Basics of Go"
 subtitle: "101 course"
-date: "2024-08-09"
+date: "2024-08-20"
 status: "Not Started"
 ---
 

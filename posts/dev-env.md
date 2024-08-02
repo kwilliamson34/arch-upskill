@@ -6,7 +6,9 @@ status: "Done"
 ---
 
 1. VSCode
-   1. TODO list of extensions
+   1. TODO list of extensions, languages and otherwise
+   1. Prettier + format on save + import organizer
+   1. Tsconfig.json for automatic imports
    1. Testing embedded terminal and debugger
 1. Browser bookmarks: Blogs, Tools, Diagramming, Actions, Tutorials, Cheatsheets
 1. File system: Set up GitHub folder and import the whole thing to VSCode workspace. View Hidden Files in Finder with Cmd + Shift + .

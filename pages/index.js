@@ -1,16 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import Date from "../components/date";
-import {
-  faCheck,
-  faSpinner,
-  faQuestion,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getSortedPostsData } from "../lib/posts";
-import clsx from "clsx";
+import CalendarItem from "../components/calendar-item";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -50,38 +41,10 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section>
-        <h2 className="container mb-4">Learning Goals</h2>
-        <div className="flex flex-wrap">
-          {allPostsData.map(({ id, date, title, subtitle, status }) => (
-            <Link
-              href={`/posts/${id}`}
-              key={id}
-              className={clsx(utilStyles.card, "mr-4 mb-4")}
-            >
-              <div>
-                <FontAwesomeIcon
-                  icon={
-                    status === "In Progress"
-                      ? faSpinner
-                      : status === "Done"
-                      ? faCheck
-                      : faQuestion
-                  }
-                  color={
-                    status === "In Progress"
-                      ? "blue"
-                      : status === "Done"
-                      ? "green"
-                      : "auto"
-                  }
-                />
-                &nbsp;{title}
-                <p className="text-sm italic">{subtitle}</p>
-                <p className="text-sm text-gray-500">
-                  <Date dateString={date} />
-                </p>
-              </div>
-            </Link>
+        <h2 className="container mb-4">Learning Goal Calendar</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-5">
+          {allPostsData.map((post) => (
+            <CalendarItem {...post} />
           ))}
         </div>
       </section>

@@ -29,10 +29,8 @@
   }
 }
 
-.card {
-  /* margin: 1rem; */
-  /* flex-basis: 45%; */
-  width: 31%;
+.card,
+.cardBlank {
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -40,6 +38,14 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  @apply mr-4;
+  @apply mb-4;
+}
+
+.cardBlank {
+  @apply bg-gray-200;
+  @apply hidden;
+  @apply lg:block;
 }
 
 .card:hover,

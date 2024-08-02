@@ -1,7 +1,7 @@
 ---
 title: "Basics of Terraform"
 subtitle: "101 course"
-date: "2024-08-11"
+date: "2024-08-19"
 status: "Not Started"
 ---
 
