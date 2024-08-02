@@ -4,6 +4,7 @@ import styles from "../styles/layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { clsx } from "clsx";
+import Script from "next/script";
 
 const name = "Katy Williamson's Arch Upskill Guide";
 export const siteTitle = "Katy's Next.js Learning Website";
@@ -13,10 +14,7 @@ export default function Layout({ children, home }) {
     <div className={clsx(styles.container)}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <script
-          src="https://kit.fontawesome.com/b610207085.js"
-          crossorigin="anonymous"
-        ></script>
+        <Script src="https://kit.fontawesome.com/b610207085.js" />
 
         <meta
           name="description"

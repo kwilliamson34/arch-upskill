@@ -1,18 +1,18 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPosts } from "../lib/posts";
 import CalendarItem from "../components/calendar-item";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPosts = getSortedPosts();
   return {
     props: {
-      allPostsData,
+      allPosts,
     },
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPosts }) {
   return (
     <Layout home>
       <Head>
@@ -43,8 +43,8 @@ export default function Home({ allPostsData }) {
       <section>
         <h2 className="container mb-4">Learning Goal Calendar</h2>
         <div className="grid grid-cols-1 lg:grid-cols-5">
-          {allPostsData.map((post) => (
-            <CalendarItem {...post} />
+          {allPosts.map((post) => (
+            <CalendarItem {...post} key={post.id} />
           ))}
         </div>
       </section>
