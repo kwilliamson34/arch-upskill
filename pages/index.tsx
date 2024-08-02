@@ -44,7 +44,7 @@ export default function Home({ allPosts }) {
         <h2 className="container mb-4">Learning Goal Calendar</h2>
         <div className="grid grid-cols-1 lg:grid-cols-5">
           {allPosts.map((post) => (
-            <CalendarItem {...post} key={post.id} />
+            <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
           ))}
         </div>
       </section>

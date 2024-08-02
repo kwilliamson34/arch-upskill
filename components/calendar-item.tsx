@@ -7,14 +7,24 @@ import {
   faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import clsx from "clsx";
 
-export default function CalendarItem(post: Post) {
+interface Props {
+  post: Post;
+  className: string | undefined;
+}
+
+export default function CalendarItem({ post, className = "" }: Props) {
   if (post.title === "Blank") {
-    return <div className={utilStyles.cardBlank}></div>;
+    return <div className={clsx(utilStyles.cardBlank, className)}></div>;
   }
 
   return (
-    <Link href={`/posts/${post.id}`} key={post.id} className={utilStyles.card}>
+    <Link
+      href={`/posts/${post.id}`}
+      key={post.id}
+      className={clsx(utilStyles.card, className)}
+    >
       <div>
         <FontAwesomeIcon
           icon={

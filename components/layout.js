@@ -6,12 +6,12 @@ import Link from "next/link";
 import { clsx } from "clsx";
 import Script from "next/script";
 
-const name = "Katy Williamson's Arch Upskill Guide";
+const name = "Katy Williamson: Arch Upskill Guide";
 export const siteTitle = "Katy's Next.js Learning Website";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={clsx(styles.container)}>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <Script src="https://kit.fontawesome.com/b610207085.js" />
@@ -29,37 +29,26 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="flex flex-col items-center">
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt=""
-            />
-            <h1 className="text-4xl mt-4">{name}</h1>
-          </>
-        ) : (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={108}
-              width={108}
-              alt="Katy's face"
-            />
-            <h2 className="mt-2">{name}</h2>
-            <div className={styles.backToHome}>
-              <Link href="/">← Back to home</Link>
-            </div>
-          </>
+      <header className="flex flex-row gap-x-4 items-center px-8 py-2 bg-gradient-to-r from-cyan-500 to-blue-500">
+        <Image
+          priority
+          src="/images/profile.jpg"
+          className={utilStyles.borderCircle}
+          height={108}
+          width={108}
+          alt="Katy's face"
+        />
+        <h2 className="mt-2 text-white">{name}</h2>
+        {!home && (
+          <Link
+            href="/"
+            className="bg-white rounded-3xl no-underline text-sm leading-loose ml-auto p-2"
+          >
+            ←<span className="hidden md:inline-block">&nbsp;Back</span>
+          </Link>
         )}
       </header>
-      <main className="mt-8 w-full">{children}</main>
-    </div>
+      <main className={clsx(styles.container, "w-full")}>{children}</main>
+    </>
   );
 }

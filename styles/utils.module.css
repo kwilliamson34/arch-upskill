@@ -38,8 +38,6 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  @apply mr-4;
-  @apply mb-4;
 }
 
 .cardBlank {
