@@ -9,15 +9,15 @@ Highlights from https://nextjs.org/learn-pages-router
 
 ### Create a Next.js App
 
-TODO
+TODO finished the module but need to fill in notes
 
 ### Navigate Between Pages
 
-TODO
+TODO finished the module but need to fill in notes
 
 ### Assets, Metadata, and CSS
 
-TODO
+TODO finished the module but need to fill in notes
 
 ### Pre-rendering and Data Fetching
 
@@ -61,11 +61,11 @@ getStaticProps can only be exported from a page. You can’t export it from non-
 
 ### Dynamic Routes
 
-TODO
+TODO finished the module but need to fill in notes
 
 ### Page Path Depends on External Data
 
-TODO
+TODO finished the module but need to fill in notes
 
 ### API Routes
 
