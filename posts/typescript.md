@@ -17,9 +17,7 @@ Benefits of TypeScript
 
 Voted 2nd most loved programming language in the Stack Overflow 2020 Developer survey
 
-https://www.typescriptlang.org/docs/handbook/intro.html
-
-A reader who completes the walkthrough should be able to:
+A reader who completes the [walkthrough](https://www.typescriptlang.org/docs/handbook/intro.html) should be able to:
 
 - Read and understand commonly-used TypeScript syntax and patterns
 - Explain the effects of important compiler options
@@ -55,7 +53,7 @@ In TypeScript, it’s better to think of a type as a set of values that share so
 
 ### Relationship to Functional Programming
 
-TODO https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html
+[TODO](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html)
 
 ### tsconfig.json
 
@@ -115,11 +113,12 @@ enum LogLevel {
   INFO,
   DEBUG,
 }
+```
 
-/**
- * This is equivalent to:
- * type LogLevelStrings = 'ERROR' | 'WARN' | 'INFO' | 'DEBUG';
- */
+This is equivalent to:
+type LogLevelStrings = 'ERROR' | 'WARN' | 'INFO' | 'DEBUG';
+
+```
 type LogLevelStrings = keyof typeof LogLevel;
 ```
 
@@ -127,23 +126,23 @@ In modern TypeScript, you may not need an enum when an object with as const coul
 
 ```
 const enum EDirection {
-  Up,
-  Down,
-  Left,
-  Right,
+Up,
+Down,
+Left,
+Right,
 }
 
 const ODirection = {
-  Up: 0,
-  Down: 1,
-  Left: 2,
-  Right: 3,
+Up: 0,
+Down: 1,
+Left: 2,
+Right: 3,
 } as const;
 ```
 
 ### Configuring in a project
 
-https://nextjs.org/docs/pages/building-your-application/configuring/typescript
+[NextJS Config Guide](https://nextjs.org/docs/pages/building-your-application/configuring/typescript)
 
 NextJS comes with built-in TypeScript support for automatically installing the necessary packages and configuring the proper settings.
 
@@ -159,15 +158,15 @@ Adding to an existing project:
 
 ### More on functions
 
-TODO https://www.typescriptlang.org/docs/handbook/2/functions.html
+[TODO](https://www.typescriptlang.org/docs/handbook/2/functions.html)
 
 ### Type manipulation
 
-TODO https://www.typescriptlang.org/docs/handbook/2/types-from-types.html
+[TODO](https://www.typescriptlang.org/docs/handbook/2/types-from-types.html)
 
 ### Classes and Modules
 
-TODO https://www.typescriptlang.org/docs/handbook/2/classes.html
+[TODO](https://www.typescriptlang.org/docs/handbook/2/classes.html)
 
 ### Newer versions
 

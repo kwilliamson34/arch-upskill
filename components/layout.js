@@ -1,12 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { clsx } from "clsx";
 import Script from "next/script";
 
-const name = "Katy Williamson: Arch Upskill Guide";
 export const siteTitle = "Katy's Next.js Learning Website";
 
 export default function Layout({ children, home }) {
@@ -29,20 +27,35 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="flex flex-row gap-x-4 items-center px-8 py-2 bg-gradient-to-r from-cyan-500 to-blue-500">
+      <header className="flex flex-row gap-x-4 items-center px-8 py-2">
+        <div className="w-full h-32 absolute inset-0 overflow-hidden flex">
+          <Image
+            priority
+            alt="Watercolor brush stroke"
+            src="/images/brush-stroke.jpg"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
+
         <Image
           priority
           src="/images/profile.jpg"
-          className={utilStyles.borderCircle}
+          className="rounded-3xl z-10"
           height={108}
           width={108}
           alt="Katy's face"
         />
-        <h2 className="mt-2 text-white">{name}</h2>
+        <h2 className="text-black z-10 font-bold tracking-wider antialiased lg:text-4xl">
+          Katy Williamson's
+          <br />
+          Arch Upskill Guide
+        </h2>
         {!home && (
           <Link
             href="/"
-            className="bg-white rounded-3xl no-underline text-sm leading-loose ml-auto p-2"
+            className="bg-white rounded-3xl no-underline text-sm leading-loose ml-auto p-2 z-10"
           >
             ←<span className="hidden md:inline-block">&nbsp;Back</span>
           </Link>
