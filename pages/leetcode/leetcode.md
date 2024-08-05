@@ -1,4 +1,4 @@
-## Day 1: Arrays and Binary Search Trees
+### Day 1: Arrays and Binary Search Trees
 
 - Interview Tip: Whenever you're trying to solve an array problem in place, always consider the possibility of iterating backwards instead of forwards through the array. It can make the problem easier and is a good solution for constant space complexity.
 - Refreshed heavily on the [Array JS reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array). In-place methods: `push, pop, shift, unshift, reverse, sort, splice, copyWithin, fill`. Not in place / produce a shallow copy: `map, filter, join, concat, slice`.
