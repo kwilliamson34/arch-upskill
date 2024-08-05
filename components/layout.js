@@ -42,7 +42,7 @@ export default function Layout({ children, home }) {
         <Image
           priority
           src="/images/profile.jpg"
-          className="rounded-3xl z-10"
+          className="rounded-full z-10"
           height={108}
           width={108}
           alt="Katy's face"

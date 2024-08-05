@@ -25,6 +25,7 @@ export default function Home({ allPosts }) {
         <ol className="list-decimal ml-8">
           <li>Learning goal</li>
           <li>
+            Code practice:{" "}
             <a href="https://leetcode.com/explore/" target="_blank">
               Leetcode
             </a>{" "}
@@ -32,6 +33,11 @@ export default function Home({ allPosts }) {
             <Link href="/leetcode">my notes</Link>)
           </li>
           <li>
+            Reading: 3 chapters of{" "}
+            <Link href="/posts/system-design">System Design</Link>
+          </li>
+          <li>
+            Career coaching:{" "}
             <a
               href="https://www.yournextstep.com/job-search/jobs?what=Senior+Software+Engineer&where=Washington+DC"
               target="_blank"

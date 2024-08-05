@@ -60,3 +60,49 @@ When estimating, consider
 - data capacity and network needs of standard and poweruser use
 - amount and longevity of storage / cache / servers
 - precision is not expected during an interview; round and sanity check
+
+### Mental framework for system design
+
+- The key is to **resolve ambiguity constructively**
+- Avoid red flags: over-engineering, not verbalizing tradeoffs
+- Ask questions and converse first; then write down assumptions. **Do not assume your assumption is correct**-- just bc you wrote it doesn't mean the interviewer agrees.
+
+Overall stick to 4 steps
+
+1. Clarity of scope (3-10 min)
+   - What specific features are we going to build? What are the most important features for this product?
+   - How many users does the product have? What is the traffic volume?
+   - How fast does the company anticipate to scale up? 3 months, 6 months, 1 year?
+   - What is the company’s technology stack? What existing services you might leverage to simplify the design?
+     - Is this greenfield development / for a young startup or an established company with standards?
+2. Propose high-level design and get buy-in (10-15 min)
+   - Ask for feedback on an inital blueprint
+   - Suggest multiple approaches
+   - Draw box diagrams, **including web servers, api / services, caches, CDN, message queue, etc**
+   - Do quick math to show design meets scale constraints
+   - Go through a few use cases; discover edge cases
+   - Think about whether a message queue would be helpful
+   - Offer to dive deeper on **API endpoints or DB schema** before proceeding
+3. Design deep dive (10-25 min)
+   - Follow the interviewer's lead / interest
+   - Identify bottlenecks, reduce latency
+   - Resource estimations or other performance characteristics
+   - Deeper on some system component
+   - Adding functionality, like offline mode
+   - Expanding on resposibilites of web servers, like **authentication and rate limiting**
+4. Wrap up (3-5 min)
+   - Follow the interviewer's lead / interest
+   - Identify bottlenecks, potential improvements or refinements
+   - Recap design and decisions; erase outdated info
+   - Raise some interesting error cases, e.g. network loss or server failure
+   - Talk about plan for logging, monitoring, observability
+
+### Quick Example lookup
+
+- News feed system: feed publishing with notifications, and news feed building
+
+### Rate limiter example
+
+TODO look into how URL shortener works with a hash function
+TODO: look into how offline mode could work
+TODO: basic authentication and rate limiting
