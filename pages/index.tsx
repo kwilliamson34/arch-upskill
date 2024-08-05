@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPosts } from "../lib/posts";
 import CalendarItem from "../components/calendar-item";
+import Link from "next/link";
 
 export async function getStaticProps() {
   const allPosts = getSortedPosts();
@@ -27,7 +28,8 @@ export default function Home({ allPosts }) {
             <a href="https://leetcode.com/explore/" target="_blank">
               Leetcode
             </a>{" "}
-            or InterviewCake
+            or InterviewCake (also check out{" "}
+            <Link href="/leetcode">my notes</Link>)
           </li>
           <li>
             <a
