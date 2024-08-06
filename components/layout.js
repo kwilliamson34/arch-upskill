@@ -52,15 +52,21 @@ export default function Layout({ children, home }) {
           <br />
           Arch Upskill Course
         </h2>
-        {!home && (
-          <Link
-            href="/"
-            className="bg-white rounded-3xl no-underline text-sm leading-loose ml-auto p-2 z-10"
-          >
-            ←<span className="hidden md:inline-block">&nbsp;Back</span>
-          </Link>
-        )}
+        <Link
+          href="/about"
+          className="bg-white rounded-3xl no-underline text-sm leading-loose ml-auto p-2 z-10"
+        >
+          About
+        </Link>
       </header>
+      {!home && (
+        <Link
+          href="/"
+          className={clsx(styles.container, "no-underline !py-0 mt-4")}
+        >
+          ←&nbsp;Home
+        </Link>
+      )}
       <main className={clsx(styles.container, "w-full")}>{children}</main>
     </>
   );
