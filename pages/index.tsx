@@ -25,16 +25,16 @@ export default function Home({ allPosts }) {
         <ol className="list-decimal ml-8">
           <li>Learning goal</li>
           <li>
-            Code practice:{" "}
+            Code practice: 3{" "}
             <a href="https://leetcode.com/explore/" target="_blank">
               Leetcode
             </a>{" "}
-            or InterviewCake (also check out{" "}
-            <Link href="/leetcode">my notes</Link>)
+            (<Link href="/leetcode">notes</Link>) or InterviewCake questions
           </li>
           <li>
             Reading: 3 chapters of{" "}
-            <Link href="/posts/system-design">System Design</Link>
+            <Link href="/posts/system-design">System Design</Link> and 3
+            articles from TLDR news letter
           </li>
           <li>
             Career coaching:{" "}

@@ -1,7 +1,7 @@
 ---
 title: "Bundles and Modules"
 subtitle: "Efficienct chunking in 2024"
-date: "2024-08-08"
+date: "2024-08-13"
 status: "Not Started"
 ---
 

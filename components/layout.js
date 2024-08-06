@@ -50,7 +50,7 @@ export default function Layout({ children, home }) {
         <h2 className="text-black z-10 font-bold tracking-wider antialiased lg:text-4xl">
           Katy Williamson's
           <br />
-          Arch Upskill Guide
+          Arch Upskill Course
         </h2>
         {!home && (
           <Link

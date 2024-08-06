@@ -2,10 +2,20 @@
 title: "Basics of NextJS"
 subtitle: "What NextJS is great at, including when and how to Use Static Generation v.s. Server-side Rendering"
 date: "2024-07-31"
-status: "Done"
+status: "Done with Todos"
 ---
 
-Highlights from https://nextjs.org/learn-pages-router
+### Key features of NextJS
+
+- Server-Side rendering
+- Automatic Code Splitting: Downloads only the necessary codes for each page and makes your web pages load faster.
+- Static Site Generation: Converts the HTML server files into a complete HTML client page, in build-time
+- ES6 support
+- Typescript Support
+- HMR (Hot module replacement): Speeds up development by making changes in a running application, without the need for a full reload.
+- Asynchronous/Await
+
+Highlights below from https://nextjs.org/learn-pages-router
 
 ### Create a Next.js App
 
@@ -95,6 +105,7 @@ https://nextjs.org/docs/pages/building-your-application/configuring/preview-mode
 
 When you’re writing a draft on your headless CMS and want to preview the draft immediately on your page, you’d want Next.js to render these pages at request time instead of build time and fetch the draft content instead of the published content. You’d want Next.js to bypass Static Generation only for this specific case.
 
-### Deploying Your Next.js App
-
-Saved for next lesson
+TODO add a request handler
+TODO add some data storage, like lesson doneness
+TODO add error boundaries and logging
+TODO add tests

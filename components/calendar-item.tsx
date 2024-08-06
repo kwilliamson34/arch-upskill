@@ -5,6 +5,7 @@ import {
   faCheck,
   faSpinner,
   faQuestion,
+  faCheckDouble,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
@@ -31,13 +32,15 @@ export default function CalendarItem({ post, className = "" }: Props) {
             post.status === "In Progress"
               ? faSpinner
               : post.status === "Done"
+              ? faCheckDouble
+              : post.status === "Done with Todos"
               ? faCheck
               : faQuestion
           }
           color={
             post.status === "In Progress"
               ? "blue"
-              : post.status === "Done"
+              : post.status === "Done" || post.status === "Done with Todos"
               ? "green"
               : "auto"
           }
