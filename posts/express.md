@@ -1,6 +1,6 @@
 ---
 title: "Basics of Express"
-subtitle: "When to use it and how it works"
+subtitle: "When to use it and how it works; Relavance in software stacks"
 date: "2024-08-06"
 status: "Done"
 ---
@@ -42,6 +42,16 @@ Use Cases for Express
 - Serve and access static files using a browser
 - Enterprise web applications
 - eCommerce web applications
+
+### MEAN stack
+
+MEAN = mongo, express, angular, node. MERN = react, MEVN = vue.
+
+**Because all components of the MEAN stack support programs that are written in JavaScript, MEAN applications can be written in one language for both server-side and client-side execution environments.**
+
+MongoDB is a NoSQL database program that uses JSON-like BSON (binary JSON) documents with optional schemas. The role of the database in the MEAN stack is very commonly filled by MongoDB because its use of JSON-like documents for interacting with data as opposed to the row/column model allows it to integrate well with the other (JavaScript-based) components of the stack.
+
+Though often compared directly to other popular web development stacks such as the LAMP stack (linux, apache, mysql, perl/python/php), the components of the MEAN stack are higher-level including a web application presentation layer and not including an operating system layer.
 
 ### Alternatives to Express
 
