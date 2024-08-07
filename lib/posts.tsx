@@ -48,7 +48,7 @@ export function getAllPostsAsContextParams(): { params: { id: string } }[] {
   });
 }
 
-export async function getPostData(id: string | string[]): Promise<PostData> {
+export async function getPostData(id: string): Promise<PostData> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
@@ -64,9 +64,9 @@ export async function getPostData(id: string | string[]): Promise<PostData> {
 
   // Combine the data with the id and contentHtml
   return {
-    id,
     contentHtml,
     ...meta,
+    id,
   };
 }
 
@@ -80,8 +80,5 @@ export async function getHtmlFromMd(fullPath: string): Promise<any> {
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
-  const contentHtml = processedContent.toString();
-
-  // Combine the data with the id and contentHtml
-  return contentHtml;
+ return processedContent.toString();
 }

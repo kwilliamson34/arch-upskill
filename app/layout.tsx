@@ -5,7 +5,7 @@ import Script from "next/script";
 import "../styles/global.css";
 import { siteTitle } from "./constants";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
