@@ -99,13 +99,32 @@ Extract the heavy logic and use it for both the API endpoint and getStaticProps,
 
 See exactly which code Next eliminates from client side bundle using this tool: https://next-code-elimination.vercel.app/
 
-## Preview mode
+### Preview mode
 
 https://nextjs.org/docs/pages/building-your-application/configuring/preview-mode
 
 When you’re writing a draft on your headless CMS and want to preview the draft immediately on your page, you’d want Next.js to render these pages at request time instead of build time and fetch the draft content instead of the published content. You’d want Next.js to bypass Static Generation only for this specific case.
 
+### Routing
+
+NextJS offers two routers: The intro course leverages the Pages Router, but the App Router is newer, server-centric, supports server compoennts, and performs better.
+
+Moving to the App Router may be the first time using React features that Next.js builds on top of such as Server Components, Suspense, and more.
+
+In switching from PR to AR, here were the main differences:
+
+- AR relies more on co-location anf file hierarchy than explicit component references
+
+### Errors
+
+NextJS offers more convenience here. [The error.js file](https://nextjs.org/docs/app/building-your-application/routing/error-handling) convention allows you to gracefully handle unexpected runtime errors in nested routes, and specify custom behaviors.
+
+- Automatically wrap a route segment and its nested children in a React Error Boundary.
+- Create error UI tailored to specific segments using the file-system hierarchy to adjust granularity.
+- Isolate errors to affected segments while keeping the rest of the application functional.
+- Add functionality to attempt to recover from an error without a full page reload.
+
 TODO add a request handler
 TODO add some data storage, like lesson doneness
-TODO add error boundaries and logging
 TODO add tests
+TODO practice with [debugging tools](https://nextjs.org/docs/pages/building-your-application/configuring/debugging)

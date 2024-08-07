@@ -105,17 +105,40 @@ Express is a framework for NodeJS. The main difference between them is that usin
 - Callback Hell: Callbacks are among the most discussed issues with the Express framework as developers fail to comprehend the complicated writing style. However, the Express team has looked into the recurring problem and introduced some relief.
 - Philosophy of Middleware: For developers who have never worked with Express, understanding and executing the middleware functions can be tricky.
 
-### Functionality
+### Security
 
-Check out [examples](https://expressjs.com/en/starter/examples.html):
+Check out [functionality examples](https://expressjs.com/en/starter/examples.html)
 
-- auth - Authentication with login and password
-- content-negotiation - HTTP content negotiation
-- cookie-sessions - Working with cookie-based sessions
-- cookies - Working with cookies
-- downloads - Transferring files to client
-- ejs - Working with Embedded JavaScript templating (ejs)
-- error-pages - Creating error pages
-- error - Working with error middleware
-- hello-world - Simple request handler
-  ... and more
+Check out [best security practices in prod](https://expressjs.com/en/advanced/best-practice-security.html)
+
+Express has built-in security features like Helmet. Helmet can help protect your app from some well-known web vulnerabilities by setting HTTP headers appropriately.
+
+Helmet is a collection of several smaller middleware functions that set security-related HTTP response headers. Some examples include:
+
+- helmet.contentSecurityPolicy which sets the Content-Security-Policy header. This helps prevent cross-site scripting attacks among many other things.
+- helmet.hsts which sets the Strict-Transport-Security header. This helps enforce secure (HTTPS) connections to the server.
+- helmet.frameguard which sets the X-Frame-Options header. This provides clickjacking protection.
+- ...and more
+
+### Cookies
+
+To ensure cookies don’t open your app to exploits, don’t use the default session cookie name and set cookie security options appropriately.
+
+There are two main middleware cookie session modules:
+
+- express-session that replaces express.session middleware built-in to Express 3.x.
+- cookie-session that replaces express.cookieSession middleware built-in to Express 3.x.
+
+Set the following cookie options to enhance security:
+
+- secure - Ensures the browser only sends the cookie over HTTPS.
+- httpOnly - Ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.
+- domain - indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.
+- path - indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.
+- expires - use to set expiration date for persistent cookies.
+
+This is [also achievable in NextJS](https://medium.com/@itself_tools/enhancing-web-security-with-secure-cookie-attributes-in-next-js-b389b9e49e6e) but not as a built-in library.
+
+### Errors
+
+Express comes with a built-in error handler that takes care of any errors that might be encountered in the app. This default error-handling middleware function is added at the end of the middleware function stack. It writes the stack trace to the client in lower environments.
