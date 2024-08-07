@@ -46,7 +46,7 @@ Next.js has two forms of pre-rendering: Static Generation and Server-side Render
 
 https://nextjs.org/docs/basic-features/pages#static-generation-recommended
 
-#### [Dynamic paths](https://nextjs.org/docs/pages/building-your-application/upgrading/app-router-migration#dynamic-paths-getstaticpaths)
+### Dynamic paths
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
@@ -73,9 +73,7 @@ API Routes let you create an API endpoint inside a Next.js app. You can do so by
 
 They can be deployed as Serverless Functions (also known as Lambdas).
 
-~~You should not fetch an API Route from getStaticProps or getStaticPaths. Instead, write your server-side code directly in getStaticProps or getStaticPaths (or call a helper function).~~
-
-~~Here’s why: getStaticProps and getStaticPaths run only on the server-side and will never run on the client-side. Moreover, these functions will not be included in the JS bundle for the browser. That means you can write code such as direct database queries without sending them to browsers.~~
+Fetching API routes should happen server side. You can write code such as direct database queries without sending them to browsers.
 
 API Routes do not specify CORS headers, meaning they are same-origin only by default. You can customize such behavior by wrapping the request handler with the CORS request helpers.
 
@@ -85,7 +83,7 @@ API Routes can't be used with static exports. However, Route Handlers in the App
 
 https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-props#write-server-side-code-directly
 
-Extract the heavy logic and use it for both the API endpoint ~~and getStaticProps~~, to improve performance.
+Extract the heavy logic and use it for both the API endpoint server-side fetch, to improve performance.
 
 See exactly which code Next eliminates from client side bundle using this tool: https://next-code-elimination.vercel.app/
 
@@ -104,7 +102,7 @@ Moving to the App Router may be the first time using React features that Next.js
 While [switching from PR to AR](https://nextjs.org/docs/pages/building-your-application/upgrading/app-router-migration), here were the main differences:
 
 - AR relies more on co-location and file hierarchy than explicit component references
-- `getServerSideProps`, `getStaticProps` and `getStaticPaths` are no longer recommended
+- `getServerSideProps`, `getStaticProps` and `getStaticPaths` from PR are no longer recommended in AR
 
 ### Errors
 
@@ -119,3 +117,4 @@ TODO add a request handler
 TODO add some data storage, like lesson doneness
 TODO add tests
 TODO practice with [debugging tools](https://nextjs.org/docs/pages/building-your-application/configuring/debugging)
+TODO more thorough with typescript types
