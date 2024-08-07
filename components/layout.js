@@ -5,7 +5,7 @@ import Link from "next/link";
 import { clsx } from "clsx";
 import Script from "next/script";
 
-export const siteTitle = "Katy's Next.js Learning Website";
+export const siteTitle = "Katy Williamson's Arch Upskill Course";
 
 export default function Layout({ children, home }) {
   return (
@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
 
         <meta
           name="description"
-          content="See how Katy learned to build a personal website using Next.js"
+          content="See how Katy learned to build a personal website using Next.js to track her course of study!"
         />
         <meta
           property="og:image"

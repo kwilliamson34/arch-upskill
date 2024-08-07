@@ -51,6 +51,11 @@ export default function Home({ allPosts }) {
       <section>
         <h2 className="container mb-4">Learning Goal Calendar</h2>
         <div className="grid grid-cols-1 lg:grid-cols-5">
+          <div className="hidden lg:block h-6 text-center">M</div>
+          <div className="hidden lg:block h-6 text-center">T</div>
+          <div className="hidden lg:block h-6 text-center">W</div>
+          <div className="hidden lg:block h-6 text-center">Th</div>
+          <div className="hidden lg:block h-6 text-center">F</div>
           {allPosts.map((post) => (
             <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
           ))}
