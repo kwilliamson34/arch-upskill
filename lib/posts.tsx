@@ -23,8 +23,8 @@ export function getSortedPosts(): Post[] {
 
     // Combine the data with the id
     return {
-      id,
       ...meta,
+      id,
     };
   });
   // Sort posts by date

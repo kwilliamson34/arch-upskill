@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
           </Link>
         </header>
         {!home && (
-          <Link href="/" className="block no-underline mt-4">
+          <Link href="/" className="block no-underline my-4">
             ←&nbsp;Home
           </Link>
         )}

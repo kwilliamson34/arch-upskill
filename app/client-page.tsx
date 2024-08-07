@@ -1,25 +1,9 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import { getSortedPosts } from "../lib/posts";
 import CalendarItem from "../components/calendar-item";
 import Link from "next/link";
 
-export async function getStaticProps() {
-  const allPosts = getSortedPosts();
-  return {
-    props: {
-      allPosts,
-    },
-  };
-}
-
-export default function Home({ allPosts }) {
+export default function HomeClientPage({ allPosts }) {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-
+    <>
       <section className="mb-8">
         <h2 className="container mb-4">Daily Tasks</h2>
         <ol className="list-decimal ml-8">
@@ -61,6 +45,6 @@ export default function Home({ allPosts }) {
           ))}
         </div>
       </section>
-    </Layout>
+    </>
   );
 }
