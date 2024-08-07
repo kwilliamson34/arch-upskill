@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles */
+@layer base {
+  h1 {
+    @apply text-4xl;
+    @apply leading-relaxed;
+  }
+  h2 {
+    @apply text-xl;
+    @apply text-gray-700;
+  }
+  h3 {
+    @apply text-lg;
+    @apply font-mono;
+    @apply text-gray-700;
+    @apply bg-gray-100;
+    @apply rounded;
+    padding: 0 0.75rem;
+    margin-top: 1.5rem;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: auto;
+  max-width: 1200px;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  @apply bg-gray-100;
+  @apply rounded;
+  @apply text-sm;
+  padding: 0.25rem;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+section {
+  margin-bottom: 16px;
+}

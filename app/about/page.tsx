@@ -1,12 +1,13 @@
-import Head from "next/head";
-import Layout from "../../components/layout";
+import { Metadata } from "next";
 
-export default function About() {
+export const metadata: Metadata = {
+  title: "About me",
+  description: "TODO",
+};
+
+export default function AboutPage() {
   return (
-    <Layout home={false}>
-      <Head>
-        <title>About me</title>
-      </Head>
+    <>
       <h1>About me</h1>
       <section>
         <h2>Projects</h2>
@@ -46,6 +47,6 @@ export default function About() {
           </li>
         </ol>
       </section>
-    </Layout>
+    </>
   );
 }
