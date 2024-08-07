@@ -11,13 +11,15 @@ export default function Error({
 }) {
   useEffect(() => {
     // Log the error to an error reporting service
+    console.log("[Error Boundary] Posts");
     console.error(error);
   }, [error]);
-  console.error(error);
 
   return (
     <div>
-      <h2>Something went wrong!</h2>
+      <h1>Oops!</h1>
+      <h2>Something went wrong (hit the Posts error boundary)</h2>
+      <br />
       <button
         onClick={
           // Attempt to recover by trying to re-render the segment
