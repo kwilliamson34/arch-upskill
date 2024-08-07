@@ -5,7 +5,6 @@ import LeetcodeClientPage from "./client-page";
 
 export const metadata: Metadata = {
   title: "Leetcode Learnings",
-  description: "TODO",
 };
 
 async function getHtml() {

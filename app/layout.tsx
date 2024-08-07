@@ -1,10 +1,9 @@
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import "../styles/global.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-
-export const siteTitle = "Katy Williamson's Arch Upskill Course";
+import { siteTitle } from "./constants";
 
 export default function Layout({ children, home }) {
   return (
@@ -59,12 +58,7 @@ export default function Layout({ children, home }) {
             About
           </Link>
         </header>
-        {!home && (
-          <Link href="/" className="block no-underline my-4">
-            ←&nbsp;Home
-          </Link>
-        )}
-        <main className="container w-full">{children}</main>
+        <main className="container w-full mt-4">{children}</main>
       </body>
     </html>
   );

@@ -1,12 +1,14 @@
+import { Metadata } from "next";
 import { getAllPostsAsContextParams, getPostData } from "../../../lib/posts";
 
-import { Metadata } from "next";
 import PostClientPage from "./client-page";
 
-export const metadata: Metadata = {
-  title: "Leetcode Learnings",
-  description: "TODO",
-};
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const postData = await getPostData(params.id);
+  return {
+    title: postData.title,
+  };
+}
 
 export async function generateStaticParams() {
   return getAllPostsAsContextParams();

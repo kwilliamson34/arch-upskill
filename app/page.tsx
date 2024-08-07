@@ -4,7 +4,8 @@ import HomeClientPage from "./client-page";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "TODO",
+  description:
+    "See how Katy learned to build a personal website using Next.js to track her course of study!",
 };
 
 export default async function HomePage() {
