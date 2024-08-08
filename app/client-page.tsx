@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HomeClientPage({ allPosts }) {
   return (
     <>
-      <section className="mb-8">
+      <section className="my-8">
         <h2 className="container mb-4">Daily Tasks</h2>
         <ol className="list-decimal ml-8">
           <li>Learning goal</li>

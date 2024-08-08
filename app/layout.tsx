@@ -25,40 +25,52 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </head>
 
-      <body className="container w-full">
-        <header className="flex flex-row gap-x-4 items-center px-8 py-2">
-          <div className="w-full h-32 absolute inset-0 overflow-hidden flex">
-            <Image
-              priority
-              alt="Watercolor brush stroke"
-              src="/images/brush-stroke.jpg"
-              fill
-              sizes="100vw"
-              className="object-cover"
-            />
-          </div>
+      <body>
+        <header className="relative flex items-center justify-between px-8 text-white">
+          <div className="container">
+            <div className="absolute inset-0 w-full overflow-hidden -z-10">
+              <Image
+                priority
+                alt="Watercolor brush stroke"
+                src="/images/brush-stroke.jpg"
+                fill
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
 
-          <Image
-            priority
-            src="/images/profile.jpg"
-            className="rounded-full z-10"
-            height={108}
-            width={108}
-            alt="Katy's face"
-          />
-          <h2 className="text-black z-10 font-bold tracking-wider antialiased lg:text-4xl">
-            Katy Williamson's
-            <br />
-            Arch Upskill Course
-          </h2>
-          <Link
-            href="/about"
-            className="bg-white rounded-3xl no-underline text-sm leading-loose ml-auto p-2 z-10"
-          >
-            About
-          </Link>
+            <div className="flex items-center">
+              <Image
+                priority
+                src="/images/profile.jpg"
+                className="rounded-full"
+                height={80}
+                width={80}
+                alt="Katy's face"
+              />
+              <div className="ml-4">
+                <h1 className="text-2xl lg:text-4xl font-bold tracking-wide antialiased pt-4">
+                  Katy Williamson
+                </h1>
+                <div>
+                  <Link
+                    href="/"
+                    className="inline-block bg-gray-100 rounded-t-2xl mt-2 mr-2 py-2 px-4 text-gray-800 no-underline text-lg font-bold tracking-wide"
+                  >
+                    Learning
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="inline-block bg-gray-100 rounded-t-2xl mt-2 mr-2 p-2 text-gray-800 no-underline text-lg font-bold tracking-wide"
+                  >
+                    About Me
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </header>
-        <main className="container w-full mt-4">{children}</main>
+        <main className="container">{children}</main>
       </body>
     </html>
   );
