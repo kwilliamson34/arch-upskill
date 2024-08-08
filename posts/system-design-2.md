@@ -2,7 +2,7 @@
 title: "More System Design"
 subtitle: "Continuing System Design Interview Insiders Vol 1"
 date: "2024-08-08"
-status: "In Progress"
+status: "Done with Todos"
 ---
 
 Notes taken while reading `System Design Interview – An insider's guide` by Alex Xu, Chapters 4-5, and the rabbit holes that followed.
