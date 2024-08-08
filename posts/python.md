@@ -1,7 +1,7 @@
 ---
 title: "Basics of Python"
 subtitle: "101 course"
-date: "2024-08-14"
+date: "2024-08-15"
 status: "Not Started"
 ---
 

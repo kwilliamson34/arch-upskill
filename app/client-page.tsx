@@ -9,16 +9,14 @@ export default function HomeClientPage({ allPosts }) {
         <ol className="list-decimal ml-8">
           <li>Learning goal</li>
           <li>
-            Code practice: 3{" "}
+            Code practice:{" "}
             <a href="https://leetcode.com/explore/" target="_blank">
               Leetcode
             </a>{" "}
-            (<Link href="/leetcode">notes</Link>) or InterviewCake questions
+            (<Link href="/leetcode">notes</Link>)
           </li>
           <li>
-            Reading: 3 chapters of{" "}
-            <Link href="/posts/system-design">System Design</Link> and 3
-            articles from TLDR news letter
+            Reading: TLDR or ByteByteGo news letter
           </li>
           <li>
             Career coaching:{" "}

@@ -2,10 +2,10 @@
 title: "Web App Arch / System Design"
 subtitle: "Overview of learnings about architectures and patterns from books like System Design Interview Insiders Vol 1"
 date: "2024-08-05"
-status: "In Progress"
+status: "Done with Todos"
 ---
 
-Notes taken while reading `System Design Interview – An insider's guide` by Alex Xu
+Notes taken while reading `System Design Interview – An insider's guide` by Alex Xu, Chapters 1-3
 
 ### Scaling
 
@@ -21,17 +21,7 @@ Notes taken while reading `System Design Interview – An insider's guide` by Al
 - Query strings with version numbers are a good way to invalidate cached files.
 - **Geographic data centers encompass web servers, databases, and caches. They may also include message queues and workers. The DNS load balancer handles geo routing.**
 
-### Message Queue / Event Queue
-
-This is a preferred architecture for scalability and reliability.
-
-- "a durable component, stored in memory"
-- intelligently distributes asynchronous requests
-- producers can post messages when consumers are unavailable
-- consumers (e.g. job workers) can read messages wehn producers are unavailable
-- producers and consumers can be scaled independently, e.g. when the queue gets backed up, or by time of day
-
-### Chapter 1 summary
+In summary,
 
 - Keep web tier stateless
 - Build redundancy at every tier
@@ -41,6 +31,16 @@ This is a preferred architecture for scalability and reliability.
 - Scale your data tier by sharding
 - Split tiers into individual services
 - Monitor your system and use automation tools
+
+### Message Queue / Event Queue
+
+This is a preferred architecture for scalability and reliability.
+
+- "a durable component, stored in memory"
+- intelligently distributes asynchronous requests
+- producers can post messages when consumers are unavailable
+- consumers (e.g. job workers) can read messages wehn producers are unavailable
+- producers and consumers can be scaled independently, e.g. when the queue gets backed up, or by time of day
 
 ### Capacity / performance estimation
 
@@ -100,9 +100,15 @@ Overall stick to 4 steps
 ### Quick Example lookup
 
 - News feed system: feed publishing with notifications, and news feed building
+- TODO fill in others
 
-### Rate limiter example
+### Database replication
 
-TODO look into how URL shortener works with a hash function
-TODO: look into how offline mode could work
-TODO: basic authentication and rate limiting
+[Airbyte Reference](https://airbyte.com/data-engineering-resources/master-slave-replication)
+
+How Master Slave Replication Works
+- Initialization: consistent snapshot of master db as slave "image"
+- Log shipping: changes to master are recorded in binary of transaction logs; logs are sent to slave servers to keep them synchronized; shipping methods include MySQL’s binary log replication or PostgreSQL’s WAL (Write-Ahead Logging) shipping.
+- Application: slaves apply same changes in same order as master
+- Acknowledgment: usually master waits for acknowledgment from at least one slave before considering a transaction as committed (high data consistency, but also a latency hit)
+- Read distribution: Reads can be distributed among slaves to reduce load on the master
