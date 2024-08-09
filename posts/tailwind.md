@@ -5,4 +5,12 @@ date: "2024-08-13"
 status: "In Progress"
 ---
 
+[Guide](https://medium.com/@rifantechguy55/setting-up-a-next-js-13-project-with-eslint-and-prettier-735c3ccfd26c)
+
+1. Install Prettier as a development dependency
+1. Set up Prettier and ESLint
+1. Install and Configure Tailwind CSS
+1. Add Tailwind CSS Directives to global css
+1. Automatically Sort Tailwind Classes with Prettier
+
 foo bar
