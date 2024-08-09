@@ -32,17 +32,17 @@ export default function CalendarItem({ post, className = "" }: Props) {
             post.status === "In Progress"
               ? faSpinner
               : post.status === "Done"
-              ? faCheckDouble
-              : post.status === "Done with Todos"
-              ? faCheck
-              : faQuestion
+                ? faCheckDouble
+                : post.status === "Done with Todos"
+                  ? faCheck
+                  : faQuestion
           }
           color={
             post.status === "In Progress"
               ? "blue"
               : post.status === "Done" || post.status === "Done with Todos"
-              ? "green"
-              : "auto"
+                ? "green"
+                : "auto"
           }
         />
         &nbsp;{post.title}

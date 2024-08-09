@@ -80,5 +80,5 @@ export async function getHtmlFromMd(fullPath: string): Promise<any> {
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
- return processedContent.toString();
+  return processedContent.toString();
 }

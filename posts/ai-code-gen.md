@@ -5,7 +5,6 @@ date: "2024-08-15"
 status: "Not Started"
 ---
 
-
 https://replit.com/
 
 https://docs.anthropic.com/en/docs/welcome

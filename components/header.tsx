@@ -14,8 +14,8 @@ const Header = () => {
         href={href}
         className={clsx(
           "inline-block rounded-t-2xl",
-          "text-gray-800 no-underline font-bold tracking-wide",
-          "mt-2 mr-2 py-2 px-2 md:px-4",
+          "font-bold tracking-wide text-gray-800 no-underline",
+          "mr-2 mt-2 px-2 py-2 md:px-4",
           href == pathname ? "bg-white" : "bg-gray-200"
         )}
       >
@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className="relative flex items-center justify-between px-8 text-white">
       <div className="container">
-        <div className="absolute inset-0 w-full overflow-hidden -z-10">
+        <div className="absolute inset-0 -z-10 w-full overflow-hidden">
           <Image
             priority
             alt="Watercolor brush stroke"
@@ -54,7 +54,7 @@ const Header = () => {
             }}
           />
           <div className="ml-4">
-            <h1 className="text-2xl lg:text-4xl font-bold tracking-wide antialiased pt-4">
+            <h1 className="pt-4 text-2xl font-bold tracking-wide antialiased lg:text-4xl">
               Katy Williamson
             </h1>
             <div>

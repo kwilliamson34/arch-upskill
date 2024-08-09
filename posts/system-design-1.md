@@ -112,6 +112,7 @@ Overall stick to 4 steps
 [Airbyte Reference](https://airbyte.com/data-engineering-resources/master-slave-replication)
 
 How Master Slave Replication Works
+
 - Initialization: consistent snapshot of master db as slave "image"
 - Log shipping: changes to master are recorded in binary of transaction logs; logs are sent to slave servers to keep them synchronized; shipping methods include MySQL’s binary log replication or PostgreSQL’s WAL (Write-Ahead Logging) shipping.
 - Application: slaves apply same changes in same order as master

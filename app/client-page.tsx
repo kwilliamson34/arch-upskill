@@ -6,7 +6,7 @@ export default function HomeClientPage({ allPosts }) {
     <>
       <section className="my-8">
         <h2 className="container mb-4">Daily Tasks</h2>
-        <ol className="list-decimal ml-8">
+        <ol className="ml-8 list-decimal">
           <li>Learning goal</li>
           <li>
             Code practice:{" "}
@@ -15,9 +15,7 @@ export default function HomeClientPage({ allPosts }) {
             </a>{" "}
             (<Link href="/leetcode">notes</Link>)
           </li>
-          <li>
-            Reading: TLDR or ByteByteGo news letter
-          </li>
+          <li>Reading: TLDR or ByteByteGo news letter</li>
           <li>
             Career coaching:{" "}
             <a
@@ -33,11 +31,11 @@ export default function HomeClientPage({ allPosts }) {
       <section>
         <h2 className="container mb-4">Learning Goal Calendar</h2>
         <div className="grid grid-cols-1 lg:grid-cols-5">
-          <div className="hidden lg:block h-6 text-center">M</div>
-          <div className="hidden lg:block h-6 text-center">T</div>
-          <div className="hidden lg:block h-6 text-center">W</div>
-          <div className="hidden lg:block h-6 text-center">Th</div>
-          <div className="hidden lg:block h-6 text-center">F</div>
+          <div className="hidden h-6 text-center lg:block">M</div>
+          <div className="hidden h-6 text-center lg:block">T</div>
+          <div className="hidden h-6 text-center lg:block">W</div>
+          <div className="hidden h-6 text-center lg:block">Th</div>
+          <div className="hidden h-6 text-center lg:block">F</div>
           {allPosts.map((post) => (
             <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
           ))}
