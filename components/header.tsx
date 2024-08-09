@@ -1,9 +1,29 @@
 "use client";
 
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
+
+  const renderNavTab = (href: string, label: string) => {
+    return (
+      <Link
+        href={href}
+        className={clsx(
+          "inline-block rounded-t-2xl",
+          "text-gray-800 no-underline text-lg font-bold tracking-wide",
+          "mt-2 mr-2 py-2 px-4",
+          href == pathname ? "bg-white" : "bg-gray-200"
+        )}
+      >
+        {label}
+      </Link>
+    );
+  };
+
   return (
     <header className="relative flex items-center justify-between px-8 text-white">
       <div className="container">
@@ -38,18 +58,8 @@ const Header = () => {
               Katy Williamson
             </h1>
             <div>
-              <Link
-                href="/"
-                className="inline-block bg-gray-100 rounded-t-2xl mt-2 mr-2 py-2 px-4 text-gray-800 no-underline text-lg font-bold tracking-wide"
-              >
-                Learning
-              </Link>
-              <Link
-                href="/about"
-                className="inline-block bg-gray-100 rounded-t-2xl mt-2 mr-2 p-2 text-gray-800 no-underline text-lg font-bold tracking-wide"
-              >
-                About Me
-              </Link>
+              {renderNavTab("/", "Learning")}
+              {renderNavTab("/about", "About Me")}
             </div>
           </div>
         </div>
