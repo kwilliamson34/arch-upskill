@@ -1,6 +1,6 @@
 ---
 title: "AI for code generation"
-subtitle: "Continuing System Design Interview Insiders Vol 1"
+subtitle: "Tradeoffs of different tools and workflows"
 date: "2024-08-15"
 status: "Not Started"
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Web App Arch / System Design"
-subtitle: "Overview of learnings about architectures and patterns from books like System Design Interview Insiders Vol 1"
+title: "System Design"
+subtitle: "Learning about architectures and patterns from System Design Interview Insiders Vol 1"
 date: "2024-08-05"
 status: "Done with Todos"
 ---
