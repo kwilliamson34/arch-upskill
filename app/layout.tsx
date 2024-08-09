@@ -1,5 +1,5 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import Script from "next/script";
 import "../styles/global.css";
