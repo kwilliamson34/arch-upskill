@@ -32,6 +32,11 @@ In summary,
 - Split tiers into individual services
 - Monitor your system and use automation tools
 
+### Basic system diagram
+
+![image](/images/arch-diagram.png)
+Credit: `System Design Interview – An insider's guide` by Alex Xu
+
 ### Message Queue / Event Queue
 
 This is a preferred architecture for scalability and reliability.
