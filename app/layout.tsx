@@ -1,5 +1,5 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import "../styles/global.css";
@@ -34,9 +34,10 @@ export default function Layout({ children }) {
                 alt="Watercolor brush stroke"
                 src="/images/brush-stroke.jpg"
                 fill
-                layout="fill"
-                objectFit="cover"
-              />
+                sizes="100vw"
+                style={{
+                  objectFit: "cover"
+                }} />
             </div>
 
             <div className="flex items-center">
@@ -47,7 +48,10 @@ export default function Layout({ children }) {
                 height={80}
                 width={80}
                 alt="Katy's face"
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <div className="ml-4">
                 <h1 className="text-2xl lg:text-4xl font-bold tracking-wide antialiased pt-4">
                   Katy Williamson
