@@ -3,6 +3,7 @@ import Script from "next/script";
 import "../styles/global.css";
 import { siteTitle } from "./constants";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Layout({ children }) {
   return (
@@ -24,9 +25,10 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </head>
 
-      <body>
+      <body className="flex min-h-screen flex-col">
         <Header />
         <main className="container">{children}</main>
+        <Footer />
       </body>
     </html>
   );
