@@ -2,7 +2,7 @@
 title: "Bundles and Modules"
 subtitle: "Efficienct chunking in 2024"
 date: "2024-08-13"
-status: "Not Started"
+status: "Done"
 ---
 
 ### History
@@ -12,6 +12,8 @@ status: "Not Started"
 - RequireJS and Browserify were dated approaches to bundling pre-webpack
 
 ### Core Concepts
+
+**Tree shaking, code splitting and minification are crucial techniques in JavaScript optimization.**
 
 - modules: can be imported, exported, and loaded asynchronously. Natively supported by JavaScript since ECMAScritp 2015.
 - chunks: flat, minified code created by the bundler crawling your dependency tree.
@@ -30,12 +32,13 @@ status: "Not Started"
 - has a dev server so that incremental code changes can be watched and immediately rebundled (CICD approach)
 - There are four basic concepts in webpack: entry , output , modules and plug-ins
 
-### Tree shaking / dead code elimination
+### Tree shaking (live code inclusion) and dead code elimination
 
 - webpack 2 includes unused module export detection
 - webpack 4 expands on this capability with a way to provide hints to the compiler via the ["sideEffects"](https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free) package.json property to denote which files in your project are "pure" and therefore safe to prune if unused. When this property is set, any imported file is subject to tree shaking.
+- tree shaking eliminates unused functions from across the bundle by starting at the entry point and only including functions that may be executed. It is succinctly described as "live code inclusion".
 
-### Next
+### NextJS
 
 Webpack 5 is now the default for all Next. js applications. If you did not have a custom webpack configuration, your application is already using webpack 5.
 
@@ -43,9 +46,10 @@ By default, packages imported inside Server Components and Route Handlers are au
 
 ### Turbopack
 
-Turbopack can be used in Next. js in both the pages and app directories for faster local development. To enable Turbopack, use the --turbo flag when running the Next. js development server.
+Turbopack can be used in Next. js in both the pages and app directories for faster local development. To enable Turbopack, use the --turbo flag when running the Next. js development server. Turbopack might make a difference in large projects.
 
-### Measuring bundle size
+### Measuring and optimizing bundle size
 
 - @next/bundle-analyzer
 - [optimizePackageImports](https://nextjs.org/docs/app/api-reference/next-config-js/optimizePackageImports)
+- Ensure no compilers transform your ES2015 module syntax into CommonJS modules (this is the default behavior of the popular Babel preset @babel/preset-env - see the documentation for more details).
