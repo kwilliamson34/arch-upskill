@@ -1,10 +1,11 @@
 import { Metadata } from "next";
-import { getHtmlFromMd } from "../../lib/posts";
 import path from "path";
+import { getHtmlFromMd } from "../../lib/posts";
+import { siteTitle } from "../constants";
 import LeetcodeClientPage from "./client-page";
 
 export const metadata: Metadata = {
-  title: "Leetcode Learnings",
+  title: `${siteTitle} - Leetcode Learnings`,
 };
 
 async function getHtml() {

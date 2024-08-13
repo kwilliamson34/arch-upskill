@@ -1,1 +1,1 @@
-export const siteTitle = "Katy Williamson's Arch Upskill Course";
+export const siteTitle = "Katy Williamson";

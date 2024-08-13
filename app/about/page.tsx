@@ -1,7 +1,8 @@
 import { Metadata } from "next";
+import { siteTitle } from "../constants";
 
 export const metadata: Metadata = {
-  title: "About me",
+  title: `${siteTitle} - About`,
 };
 
 export default function AboutPage() {

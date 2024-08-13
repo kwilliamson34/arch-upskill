@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 import { getAllPostsAsContextParams, getPostData } from "../../../lib/posts";
 
+import { siteTitle } from "../../constants";
 import PostClientPage from "./client-page";
 
 export async function generateMetadata({ params }): Promise<Metadata> {
   const postData = await getPostData(params.id);
   return {
-    title: postData.title,
+    title: `${siteTitle} - ${postData.title}`,
   };
 }
 

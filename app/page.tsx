@@ -1,9 +1,10 @@
-import { getSortedPosts } from "../lib/posts";
 import { Metadata } from "next";
+import { getSortedPosts } from "../lib/posts";
 import HomeClientPage from "./client-page";
+import { siteTitle } from "./constants";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: `${siteTitle} - Home`,
   description:
     "See how Katy learned to build a personal website using Next.js to track her course of study!",
 };
