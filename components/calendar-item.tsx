@@ -1,13 +1,7 @@
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Date from "./date";
-import {
-  faCheck,
-  faSpinner,
-  faQuestion,
-  faCheckDouble,
-} from "@fortawesome/free-solid-svg-icons";
-import { FaBeer, FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from 'react-icons/fa';
+import { FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from 'react-icons/fa';
 import clsx from "clsx";
 
 interface Props {
