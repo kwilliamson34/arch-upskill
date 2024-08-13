@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { siteTitle } from "../constants";
+import JokeWrapper from "../../components/joke";
 
 export const metadata: Metadata = {
   title: `${siteTitle} - About`,
@@ -31,7 +32,7 @@ export default function AboutPage() {
           >
             VR experience
           </a>{" "}
-          with Unity! I got my degrees in Computer Science and Computer
+          with Unity3D! I got my degrees in Computer Science and Computer
           Engineering at UVA, got my first real job, and built a{" "}
           <a
             href="https://medium.com/@miladd3/avoid-using-apache-cordova-if-you-can-6d1654bba5bd"
@@ -92,6 +93,10 @@ export default function AboutPage() {
             </a>
           </li>
         </ol>
+      </section>
+      <section>
+        <h2>Wanna hear a joke?</h2>
+        <JokeWrapper />
       </section>
     </>
   );
