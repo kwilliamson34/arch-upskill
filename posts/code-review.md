@@ -1,7 +1,7 @@
 ---
 title: "Code Review Standards"
 subtitle: "101 course"
-date: "2024-08-26"
+date: "2024-08-23"
 status: "Not Started"
 ---
 

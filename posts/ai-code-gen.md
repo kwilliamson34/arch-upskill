@@ -1,7 +1,7 @@
 ---
 title: "AI for code generation"
 subtitle: "Tradeoffs of different tools and workflows"
-date: "2024-08-15"
+date: "2024-08-19"
 status: "Not Started"
 ---
 
