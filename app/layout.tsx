@@ -1,4 +1,3 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import Script from "next/script";
 import "../styles/global.css";
 import { siteTitle } from "./constants";
@@ -9,8 +8,6 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
-        <Script src="https://kit.fontawesome.com/b610207085.js" />
-
         <meta
           name="description"
           content="See how Katy learned to build a personal website using Next.js to track her course of study!"

@@ -7,7 +7,7 @@ import {
   faQuestion,
   faCheckDouble,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBeer, FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from 'react-icons/fa';
 import clsx from "clsx";
 
 interface Props {
@@ -20,6 +20,12 @@ export default function CalendarItem({ post, className = "" }: Props) {
     return <div className={clsx(utilStyles.cardBlank, className)}></div>;
   }
 
+  const iconFill = post.status === "In Progress"
+  ? "blue"
+  : post.status === "Done" || post.status === "Done with Todos"
+    ? "green"
+    : "auto";
+
   return (
     <Link
       href={`/posts/${post.id}`}
@@ -27,24 +33,16 @@ export default function CalendarItem({ post, className = "" }: Props) {
       className={clsx(utilStyles.card, className)}
     >
       <div>
-        <FontAwesomeIcon
-          icon={
+        {
             post.status === "In Progress"
-              ? faSpinner
+              ? <FaSpinner fill={iconFill} className='inline-block'/>
               : post.status === "Done"
-                ? faCheckDouble
+                ? <FaCheckDouble fill={iconFill} className='inline-block'/>
                 : post.status === "Done with Todos"
-                  ? faCheck
-                  : faQuestion
+                  ? <FaCheck fill={iconFill} className='inline-block' />
+                  : <FaQuestion fill={iconFill} className='inline-block'/>
           }
-          color={
-            post.status === "In Progress"
-              ? "blue"
-              : post.status === "Done" || post.status === "Done with Todos"
-                ? "green"
-                : "auto"
-          }
-        />
+        
         &nbsp;{post.title}
         <p className="text-sm italic">{post.subtitle}</p>
         <p className="text-sm text-gray-500">
