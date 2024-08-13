@@ -1,7 +1,7 @@
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Date from "./date";
-import { FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from 'react-icons/fa';
+import { FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from "react-icons/fa";
 import clsx from "clsx";
 
 interface Props {
@@ -14,11 +14,12 @@ export default function CalendarItem({ post, className = "" }: Props) {
     return <div className={clsx(utilStyles.cardBlank, className)}></div>;
   }
 
-  const iconFill = post.status === "In Progress"
-  ? "blue"
-  : post.status === "Done" || post.status === "Done with Todos"
-    ? "green"
-    : "auto";
+  const iconFill =
+    post.status === "In Progress"
+      ? "blue"
+      : post.status === "Done" || post.status === "Done with Todos"
+        ? "green"
+        : "auto";
 
   return (
     <Link
@@ -27,16 +28,15 @@ export default function CalendarItem({ post, className = "" }: Props) {
       className={clsx(utilStyles.card, className)}
     >
       <div>
-        {
-            post.status === "In Progress"
-              ? <FaSpinner fill={iconFill} className='inline-block'/>
-              : post.status === "Done"
-                ? <FaCheckDouble fill={iconFill} className='inline-block'/>
-                : post.status === "Done with Todos"
-                  ? <FaCheck fill={iconFill} className='inline-block' />
-                  : <FaQuestion fill={iconFill} className='inline-block'/>
-          }
-        
+        {post.status === "In Progress" ? (
+          <FaSpinner fill={iconFill} className="inline-block" />
+        ) : post.status === "Done" ? (
+          <FaCheckDouble fill={iconFill} className="inline-block" />
+        ) : post.status === "Done with Todos" ? (
+          <FaCheck fill={iconFill} className="inline-block" />
+        ) : (
+          <FaQuestion fill={iconFill} className="inline-block" />
+        )}
         &nbsp;{post.title}
         <p className="text-sm italic">{post.subtitle}</p>
         <p className="text-sm text-gray-500">
