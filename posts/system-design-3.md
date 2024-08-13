@@ -64,7 +64,8 @@ CAP theorem states that one of the three properties must be sacrificed to suppor
 
 ### Napkin math (again)
 
-Take the time for napkin math. If the interviewer gitves hints about how many operations per second, or what data type/length is expected, carry that through (ask if allowed to use phone calculator or *round*). Make a proposal about the system's life span, maybe 10 yeaars, and discuss related design decisions.
+Take the time for napkin math. If the interviewer gitves hints about how many operations per second, or what data type/length is expected, carry that through (ask if allowed to use phone calculator or _round_). Make a proposal about the system's life span, maybe 10 yeaars, and discuss related design decisions.
+
 - number of operations per day, system lifetime
 - storage requirement
 
@@ -74,10 +75,11 @@ When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold 365
 
 ### RESTful API sketch
 
-POST api/v1/data/shorten   
-   - request parameter: {longUrl: url}
-   - content type: These include "application/json"
-   - return shortURL: url
+POST api/v1/data/shorten
+
+- request parameter: {longUrl: url}
+- content type: These include "application/json"
+- return shortURL: url
 
 Stick to [these data types](https://help.accusoft.com/PrizmDoc/v13.5/HTML/api-data-types.html): `number`, `integer`, `boolean`, `date`, `dateTime`, `object`, `array`, `string`, `url`, `urlSafeBase64`
 

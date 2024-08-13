@@ -11,7 +11,13 @@ interface Props {
 
 export default function CalendarItem({ post, className = "" }: Props) {
   if (post.title === "Blank") {
-    return <div className={clsx(utilStyles.cardBlank, className)}></div>;
+    return (
+      <div className={clsx(utilStyles.cardBlank, className)}>
+        <Date dateString={post.date} />
+        <br />
+        Break
+      </div>
+    );
   }
 
   const iconFill =

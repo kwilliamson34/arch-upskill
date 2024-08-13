@@ -87,7 +87,7 @@ Read more at https://ikius.com/blog/vercel-vs-netlify
 
 ### Security
 
-Through abstraction. TODO More here on auth and beyond
+Through abstraction.
 
 ### Scaling
 

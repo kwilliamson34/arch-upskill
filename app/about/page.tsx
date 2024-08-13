@@ -14,10 +14,10 @@ export default function AboutPage() {
           have 10+ years of experience as an engineer working across the stack,
           and 3+ years providing technical leadership at the squad and group
           level. I have built and mentored high-performing engineering teams,
-          invested in strong cross-functional partnerships, and delivered scalable
-          high-quality solutions. I am passionate about the user experience. My
-          teammates recognize me for inspiring and upholding high standards in
-          solution design, code quality, and end-to-end ownership.
+          invested in strong cross-functional partnerships, and delivered
+          scalable high-quality solutions. I am passionate about the user
+          experience. My teammates recognize me for inspiring and upholding high
+          standards in solution design, code quality, and end-to-end ownership.
         </p>
         <p>
           I started my software engineering journey with an Intro to CS class at{" "}

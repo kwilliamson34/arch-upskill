@@ -139,4 +139,3 @@ Hashing is a one-way operation. It is designed to make decryption infeasible.
 ### Misc
 
 TODO: look into how offline mode could work
-TODO: basic authentication
