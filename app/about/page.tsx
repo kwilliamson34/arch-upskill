@@ -12,13 +12,12 @@ export default function AboutPage() {
         <p>
           What gives me purpose in my work? Enablement, efficiency, impact. I
           have 10+ years of experience as an engineer working across the stack,
-          and 3+ years providing technical leadership and unlocking high
-          performance in delivery teams. I have started teams from scratch,
-          built strong cross-functional partnerships, mentored other engineers,
-          and delivered large features at high velocity and high quality. I am
-          passionate about the user experience. My teammates recognize me for
-          inspiring and upholding high standards in solution design, code
-          quality, and end-to-end ownership.
+          and 3+ years providing technical leadership at the squad and group
+          level. I have built and mentored high-performing engineering teams,
+          invested in strong cross-functional partnerships, and delivered scalable
+          high-quality solutions. I am passionate about the user experience. My
+          teammates recognize me for inspiring and upholding high standards in
+          solution design, code quality, and end-to-end ownership.
         </p>
         <p>
           I started my software engineering journey with an Intro to CS class at{" "}
@@ -40,8 +39,8 @@ export default function AboutPage() {
             hybrid app
           </a>{" "}
           back when they were cool. Thus I was launched as a web app engineer,
-          evolving over many different projects and teams to become the
-          tech lead I am today.
+          evolving over many different projects and teams to become the tech
+          lead I am today.
         </p>
         <p>
           Besides software, I care about gardening and{" "}

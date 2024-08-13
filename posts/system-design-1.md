@@ -79,7 +79,8 @@ Overall stick to 4 steps
    - How many users does the product have? What is the traffic volume?
    - How fast does the company anticipate to scale up? 3 months, 6 months, 1 year?
    - What is the company’s technology stack? What existing services you might leverage to simplify the design?
-     - Is this greenfield development / for a young startup or an established company with standards?
+   - Is this greenfield development / for a young startup or an established company with standards?
+   - What are the data type / size requirements? Do we need characteristics like sortability?
 2. Propose high-level design and get buy-in (10-15 min)
    - Ask for feedback on an inital blueprint
    - Suggest multiple approaches
@@ -105,6 +106,7 @@ Overall stick to 4 steps
 ### Quick Example lookup
 
 - News feed system: feed publishing with notifications, and news feed building
+- Key-value store: distributed hash table; partition with consistent hashing for even data spread; data replication; conflict resolution
 - TODO fill in others
 
 ### Database replication
