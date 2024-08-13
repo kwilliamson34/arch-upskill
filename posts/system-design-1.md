@@ -81,6 +81,8 @@ Overall stick to 4 steps
    - What is the company’s technology stack? What existing services you might leverage to simplify the design?
    - Is this greenfield development / for a young startup or an established company with standards?
    - What are the data type / size requirements? Do we need characteristics like sortability?
+   - Can you give me example input and output/system behavior?
+   - Do we know we need any analytics, or observability into user or system behavior, upfront?
 2. Propose high-level design and get buy-in (10-15 min)
    - Ask for feedback on an inital blueprint
    - Suggest multiple approaches
@@ -107,6 +109,7 @@ Overall stick to 4 steps
 
 - News feed system: feed publishing with notifications, and news feed building
 - Key-value store: distributed hash table; partition with consistent hashing for even data spread; data replication; conflict resolution
+- URL shortener: RESTful API, 301 permanent redirect or 302 analytics on every click, hash table for url map, hash function (base 62 conversion)
 - TODO fill in others
 
 ### Database replication

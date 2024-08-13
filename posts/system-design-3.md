@@ -5,7 +5,7 @@ date: "2024-08-12"
 status: "Done"
 ---
 
-Notes taken while reading `System Design Interview – An insider's guide` by Alex Xu, Chapters 6-7
+Notes taken while reading `System Design Interview – An insider's guide` by Alex Xu, Chapters 6-8
 
 ### Tradeoffs and decisions for key-value store
 
@@ -61,3 +61,26 @@ CAP theorem states that one of the three properties must be sacrificed to suppor
   - Sequence increments but resets every millisecond. If we allot 12 bits, that's 2^12 combinations, of 4096 new ids possible per server per millisecond
   - timestamps are milliseconds since the epoch
   - timestamp should be the first segment for readability, but that forces us to predetermine the space it can take up / the length of time this design will be valid; might need ID migration later
+
+### Napkin math (again)
+
+Take the time for napkin math. If the interviewer gitves hints about how many operations per second, or what data type/length is expected, carry that through (ask if allowed to use phone calculator or *round*). Make a proposal about the system's life span, maybe 10 yeaars, and discuss related design decisions.
+- number of operations per day, system lifetime
+- storage requirement
+
+In the case of a tiny URL generator, we are given the requirement that 100 million URLs are generated per day, and the system will live for at least 10 years. We know the hashValue will of characters from [0-9, a-z, A-Z], containing 10 + 26 + 26 = 62 possible characters. To figure out the length of hashValue, find the smallest n such that 62^n ≥ 365 billion.
+
+When n = 7, 62 ^ n = ~3.5 trillion, 3.5 trillion is more than enough to hold 365 billion URLs, so the length of hashValue is 7.
+
+### RESTful API sketch
+
+POST api/v1/data/shorten   
+   - request parameter: {longUrl: url}
+   - content type: These include "application/json"
+   - return shortURL: url
+
+Stick to [these data types](https://help.accusoft.com/PrizmDoc/v13.5/HTML/api-data-types.html): `number`, `integer`, `boolean`, `date`, `dateTime`, `object`, `array`, `string`, `url`, `urlSafeBase64`
+
+Content types for request body: These include "text/plain", "application/xml", "text/html", "application/json", "image/gif", "image/jpeg", "multipart/form-data", etc.
+
+Base64 is a group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation. By consisting only of characters permitted by the URL syntax ("URL safe"), we can safely encode binary data in data URLs.
