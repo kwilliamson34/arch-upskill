@@ -84,13 +84,13 @@ Theoretically you could use both Hapi and Express together, but some of the Hapi
 
 ### Express vs. NextJS
 
-TODO: insert two images with [MDX](https://nextjs.org/docs/app/building-your-application/configuring/mdx)
-
 **Express.js is primarily a server-side framework** for building web applications, APIs, and other server-side applications. NextJS is server or client side.
 
-[This source](https://www.mirrorfly.com/blog/nextjs-vs-expressjs) says, re: static generation, Express employs deferred static generation. A page creation can be postponed until a request is raised by a user. This speeds up the build time. In contrast, NextJS adapts "i"ncremental static regeneration." You can build or update a static page or parts of a page without the need to rebuild the entire app.
+[This source](https://www.mirrorfly.com/blog/nextjs-vs-expressjs) says, re: static generation, Express employs deferred static generation. A page creation can be postponed until a request is raised by a user. This speeds up the build time. In contrast, NextJS adapts "incremental static regeneration." You can build or update a static page or parts of a page without the need to rebuild the entire app.
 
-Many developers use Express.js when they need only a framework for the backend. But, it does pay more attention to security and db connection than Next.
+Many developers use Express.js when they need only a framework for the backend.
+
+Express also pays more attention to security and db connection than Next.
 
 ### Express vs. Nginx
 

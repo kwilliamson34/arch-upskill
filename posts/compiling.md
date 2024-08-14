@@ -2,7 +2,7 @@
 title: "Compiling and Pre/Post-processing"
 subtitle: "Tailwind PostCss, Babel Transformations, etc"
 date: "2024-08-14"
-status: "In Progress"
+status: "Done"
 ---
 
 ### Compiler vs Interpreter vs Transpiler
@@ -29,11 +29,21 @@ When your application has a .babelrc file, Next.js will automatically fall back 
 
 ### How Babel works
 
-TODO what/how does it transform
+[Steps in transformation](https://mhk-bit.medium.com/babel-under-the-hood-63e3fb961243)
+
+1. Parsing: Babel takes the source code and parses it into an `AST (Abstract Syntax Tree)`, describing each part of the syntax of the source code and their relation to each other. Nodes in this tree are things like ExpressionStatement, ArrowFunctionExpression, BinaryExpression...
+1. Transformation: Specified babel `plugins/presets` manipulate the AST such that it represents a browser suppported code. These plugins use `babel-traverse` to traverse the AST, and contain the code which defines how to modify/replace the original AST with the new AST.
+1. Code generation: The transformed new AST is turned into its source code (browser supported) by `babel-generator`.
+
+### CSS Modules
+
+Early CSS was all global. This causes some problems: small changes create sweeping side effects, file becomes hige and unwieldy, etc.
+
+[CSS Modules](https://css-tricks.com/css-modules-part-1-need/) is not an official spec or an implementation in the browser, but rather a process in a build step (with the help of Webpack or Browserify) that changes class names and selectors to be scoped ("automatic class name generation"). Localized scoping is a big improvement for maintainability, but is a performance risk if not managed well.
 
 ### Preprocessors
 
-Preprocessors have their own syntax, which requires you to compile or transpile your code into code the brwser can understand before sending it to the browser.
+Preprocessors have their own syntax, which requires you to compile or transpile your code into code the browser can understand before sending it to the browser.
 Common preprocessors:
 
 - CoffeeScript
@@ -41,15 +51,25 @@ Common preprocessors:
 - TypeScript
 - Sass/Less
 
-### Tailwind PostCSS
-
-It is a tool for transforming CSS with JavaScript; The end of global CSS.
-
-CSS Modules provide localized scoping and automatic class name generation, while PostCSS offers a plugin system and the ability to perform various transformations on your CSS code.
-
 Sass and Less are two popular preprocessors that extend the capabilities of CSS. They allow you to use variables, mixins, functions, nesting, inheritance, and other features that make your code more readable and maintainable. They also have their own syntax, which requires you to compile your code into plain CSS before sending it to the browser.
 
-PostCSS is not a preprocessor, but a postprocessor. That means it does not have its own syntax, but instead uses standard CSS and modifies it with plugins.
+### Tailwind
+
+Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined CSS classes you can leverage when styling your HTML elements. While highly customizable, the initial set of classes makes for quick prototyping and sweeping standardization.
+
+### Tailwind PostCSS
+
+PostCSS is a tool for transforming CSS with JavaScript. It offers a plugin system and the ability to perform various transformations on your CSS code.
+
+PostCSS is not a preprocessor, but a postprocessor. That means it does not have its own syntax, but instead uses standard CSS and modifies it with plugins. PostCSS takes a CSS file and provides an API to analyze and modify its rules (by transforming them into an Abstract Syntax Tree). This API can then be used by plugins to do a lot of useful things, e.g., to find errors automatically, or to insert vendor prefixes.
+
+For example, this project includes the `@tailwind base;` directive in the global css file, and the `text-xl` class in several components. Both are postprocessed into simple CSS at build time.
+
+There are performance benefits of PostCSS:
+
+- JIT (Just-in-Time): Tailwind v2.1 only generates the styles that are declared in your template files, ensuring that unused classes don't exist in production.
+- Purging: Tailwind restricts various CSS idiosyncrasies and keeps the user within its token and class ecosystem, providing full predictability for [PurgeCSS](https://purgecss.com/) to safely remove unused code.
+- Config-less Optimization and Compatibility: Tailwind uses minification and compression to deliver optimized CSS bundles.
 
 ### Tailwind Setup
 
@@ -61,6 +81,10 @@ PostCSS is not a preprocessor, but a postprocessor. That means it does not have 
 1. Add Tailwind CSS Directives to global css
 1. Automatically Sort Tailwind Classes with Prettier
 
-### Emotion
+### Emotion vs Tailwind
 
-TODO systems that go a step beyond
+Emotion is another library designed for writing css styles with JavaScript. It provides powerful and predictable style composition in addition to a great developer experience with features such as source maps, labels, and testing utilities. Both string and object styles are supported.
+
+MaterialUI includes an Emotion-based styling solution.
+
+Emotion's syntax looks closer to standard CSS, with keys and values, vs tailwind classes that abtract away the hyphens/colons/etc. It could be an advantage when you need finer control of values, or when property-to-class recall is too hard.
