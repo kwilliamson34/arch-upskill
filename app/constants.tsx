@@ -1,1 +1,1 @@
-export const siteTitle = "Katy Williamson";
+export const siteTitle = "Katy Williamson Wang";

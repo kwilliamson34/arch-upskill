@@ -55,7 +55,9 @@ const Header = () => {
           />
           <div className="ml-4">
             <h1 className="pt-4 text-2xl font-bold tracking-wide antialiased lg:text-4xl">
-              Katy Williamson
+              Katy&nbsp;
+              <span className="hidden md:inline-block">Williamson&nbsp;</span>
+              Wang
             </h1>
             <div>
               {renderNavTab("/", "Learning")}

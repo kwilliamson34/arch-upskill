@@ -11,6 +11,7 @@ export default function AboutPage() {
     <>
       <section>
         <h2>Intro</h2>
+
         <p>
           What gives me purpose in my work? Enablement, efficiency, impact. I
           have 10+ years of experience as an engineer working across the stack,
@@ -57,6 +58,75 @@ export default function AboutPage() {
         </p>
       </section>
       <section>
+        <a
+          href="https://www.linkedin.com/in/kathryn-concetta-williamson/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </section>
+      <section>
+        <h2>Values</h2>
+        <ul>
+          <li>
+            <strong>Short feedback loops.</strong> Feedback loops should be
+            short enough that the value of learning outweighs the cost of being
+            wrong. I have the agency, and contribute to a team culture that
+            cultivates the agency, to adjust after learnings. I collect data,
+            review, learn, decide, and adjust. I fail fast, when failure isn't
+            too expensive. I subscribe to YAGNI (You Aren't Going To Need It)
+            and build incrementally with confidence, rather than
+            over-engineering at the start. (
+            <a
+              href="https://developertea.com/episodes/e8545729-3383-4d50-a48a-1ce0919c1889"
+              target="_blank"
+            >
+              hear more
+            </a>
+            ) (
+            <a
+              href="https://www.tatvasoft.com/outsourcing/2022/05/software-development-principles.html"
+              target="_blank"
+            >
+              read more
+            </a>
+            )
+          </li>
+          <li>
+            <strong>Solve uncertainty by committing.</strong> When I don't have
+            the right obvious answer, I will commit, and contribute to a culture
+            of committing, to a course of action to move forward. Endless churn
+            is bad. Spending too much time to achieve consensus is bad. But
+            "disagree and commit" isn't quite right. I constructively debate,
+            communicate clearly, document decisions, bring people along, and
+            adjust in the face of new information; but I refuse to be blocked. (
+            <a
+              href="https://gavinadams.com/disagree-and-commit/"
+              target="_blank"
+            >
+              read more
+            </a>
+            )
+          </li>
+          <li>
+            <strong>Extreme ownership.</strong> I hold my work to a high
+            standard, from code I write, to code I review, to the whole
+            codebase, to the context of my project, to stakeholder clarity, to
+            maintaining and expanding my knowledge, and beyond. I am reliable
+            and I follow through. I do Big Design Up Front (BDUF) and build
+            prototypes to know what I don't know. I take responsibility for
+            mistakes and poor results, and the plan for what to do next. (
+            <a
+              href="https://medium.com/@marijnscholtens/applying-extreme-ownership-in-software-engineering-1e1ca9235fa9"
+              target="_blank"
+            >
+              read more
+            </a>
+            )
+          </li>
+        </ul>
+      </section>
+      <section>
         <h2>Projects</h2>
         <ol>
           <li>
@@ -66,7 +136,7 @@ export default function AboutPage() {
             >
               Arch Upskill
             </a>
-            &nbsp;(this project)
+            &nbsp;(this project); built with NextJS, TypeScript, and Vercel
           </li>
         </ol>
       </section>
