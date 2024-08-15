@@ -1,6 +1,6 @@
 ---
 title: "API Design"
-subtitle: "Sketch, design, implementation, consume"
+subtitle: "Sketch, design, implementation, consume. REST and GraphQL."
 date: "2024-08-15"
 status: "Not Started"
 ---

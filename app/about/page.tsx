@@ -58,10 +58,7 @@ export default function AboutPage() {
         </p>
       </section>
       <section>
-        <a
-          href="https://www.linkedin.com/in/kathryn-concetta-williamson/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/kcww" target="_blank">
           LinkedIn
         </a>
       </section>
@@ -72,11 +69,11 @@ export default function AboutPage() {
             <strong>Short feedback loops.</strong> Feedback loops should be
             short enough that the value of learning outweighs the cost of being
             wrong. I have the agency, and contribute to a team culture that
-            cultivates the agency, to adjust after learnings. I collect data,
-            review, learn, decide, and adjust. I fail fast, when failure isn't
-            too expensive. I subscribe to YAGNI (You Aren't Going To Need It)
-            and build incrementally with confidence, rather than
-            over-engineering at the start. (
+            cultivates the agency, to adjust when we learn something new. I
+            collect data, review, learn, decide, and adjust. I fail fast, when
+            failure isn&apos;t too expensive. I subscribe to YAGNI (You
+            Aren&apos;t Going To Need It) and build incrementally with
+            confidence, rather than over-engineering at the start. (
             <a
               href="https://developertea.com/episodes/e8545729-3383-4d50-a48a-1ce0919c1889"
               target="_blank"
@@ -93,13 +90,14 @@ export default function AboutPage() {
             )
           </li>
           <li>
-            <strong>Solve uncertainty by committing.</strong> When I don't have
-            the right obvious answer, I will commit, and contribute to a culture
-            of committing, to a course of action to move forward. Endless churn
-            is bad. Spending too much time to achieve consensus is bad. But
-            "disagree and commit" isn't quite right. I constructively debate,
-            communicate clearly, document decisions, bring people along, and
-            adjust in the face of new information; but I refuse to be blocked. (
+            <strong>Refuse to be blocked.</strong> When I don&apos;t have the
+            right obvious answer, I will commit, and contribute to a culture of
+            committing, to a course of action to move forward. Endless churn is
+            bad. Spending too much time to achieve consensus is bad. But
+            &quot;disagree and commit&quot; isn&apos;t quite right. I
+            constructively debate, communicate clearly, document decisions,
+            bring people along, and adjust in the face of new information; but I
+            refuse to be blocked. (
             <a
               href="https://gavinadams.com/disagree-and-commit/"
               target="_blank"
@@ -114,7 +112,7 @@ export default function AboutPage() {
             codebase, to the context of my project, to stakeholder clarity, to
             maintaining and expanding my knowledge, and beyond. I am reliable
             and I follow through. I do Big Design Up Front (BDUF) and build
-            prototypes to know what I don't know. I take responsibility for
+            prototypes to know what I don&apos;t know. I take responsibility for
             mistakes and poor results, and the plan for what to do next. (
             <a
               href="https://medium.com/@marijnscholtens/applying-extreme-ownership-in-software-engineering-1e1ca9235fa9"
@@ -159,7 +157,7 @@ export default function AboutPage() {
               href="https://medium.com/storyblocks-engineering/php-isnt-that-bad-68faa2bc5cca"
               target="_blank"
             >
-              PHP isn’t that bad
+              PHP isn&apos;t that bad
             </a>
           </li>
         </ol>
