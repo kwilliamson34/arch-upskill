@@ -15,7 +15,13 @@ export default function HomeClientPage({ allPosts }) {
             </a>{" "}
             (<Link href="/leetcode">notes</Link>)
           </li>
-          <li>Reading: TLDR or ByteByteGo news letter</li>
+          <li>
+            Reading:{" "}
+            <a href="https://tldr.tech/" target="_blank">
+              TLDR
+            </a>
+            &nbsp;or ByteByteGo Newsletter
+          </li>
           <li>
             Career coaching:{" "}
             <a
@@ -23,6 +29,13 @@ export default function HomeClientPage({ allPosts }) {
               target="_blank"
             >
               Intoo
+            </a>
+            &nbsp;or&nbsp;
+            <a
+              href="https://leopard.fyi/engineer-signup/?mwr=90c3cb4c"
+              target="_blank"
+            >
+              Leopard
             </a>
           </li>
         </ol>

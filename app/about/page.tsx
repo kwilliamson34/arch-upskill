@@ -122,6 +122,23 @@ export default function AboutPage() {
             </a>
             )
           </li>
+          <li>
+            <strong>Low ego.</strong> I&apos;m a low ego engineer, and while I
+            can work effectively with all types of people, I love working with
+            low ego people and find it builds immense trust. Low ego means: I
+            spend time listening and considering before asserting. I approach
+            everything with curiosity and a desire to learn. My mind can be
+            changed. I admit my mistakes. I don&apos;t exaggerate my expertise
+            or certainty. When I&apos;m certain, I am really really certain,
+            because I checked my work twice. (
+            <a
+              href="https://hackernoon.com/put-your-ego-aside-humility-and-confidence-in-software-development"
+              target="_blank"
+            >
+              read more
+            </a>
+            )
+          </li>
         </ul>
       </section>
       <section>
