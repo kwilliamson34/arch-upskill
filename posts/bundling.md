@@ -44,9 +44,13 @@ Webpack 5 is now the default for all Next. js applications. If you did not have 
 
 By default, packages imported inside Server Components and Route Handlers are automatically bundled by Next.js. [This page](https://nextjs.org/docs/app/building-your-application/optimizing/package-bundling) will guide you through how to analyze and further optimize package bundling.
 
-### Turbopack
+### Turbopack vs Webpack
 
 Turbopack can be used in Next. js in both the pages and app directories for faster local development. To enable Turbopack, use the --turbo flag when running the Next. js development server. Turbopack might make a difference in large projects.
+
+### Vite vs Webpack
+
+TODO
 
 ### Measuring and optimizing bundle size
 

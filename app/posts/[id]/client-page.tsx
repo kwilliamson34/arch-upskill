@@ -1,12 +1,17 @@
 import Date from "../../../components/date";
 
-export default function PostClientPage({ postData }) {
+interface Props {
+  postData: PostData;
+}
+
+export default function PostClientPage({ postData }: Props) {
   return (
     <>
       <h1>{postData.title}</h1>
-      <h2 className="mb-4">
-        <Date dateString={postData.date} />
-      </h2>
+      <h2>{postData.subtitle}</h2>
+      <p className="italic text-gray-700">
+        <Date dateString={postData.date} /> - {postData.status}
+      </p>
       <div
         className="text-md"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
