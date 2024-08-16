@@ -1,5 +1,5 @@
-import CalendarItem from "../components/calendar-item";
 import Link from "next/link";
+import CalendarItem from "../components/calendar-item";
 
 export default function HomeClientPage({ allPosts }) {
   return (
@@ -16,7 +16,20 @@ export default function HomeClientPage({ allPosts }) {
             (<Link href="/leetcode">notes</Link>)
           </li>
           <li>
-            Reading:{" "}
+            System design practice:{" "}
+            <span className="underline">
+              System Design Interview Insiders Vol 1
+            </span>{" "}
+            or{" "}
+            <a
+              href="https://github.com/donnemartin/system-design-primer"
+              target="blank"
+            >
+              System Design Primer
+            </a>
+          </li>
+          <li>
+            Keep-current reading:{" "}
             <a href="https://tldr.tech/" target="_blank">
               TLDR
             </a>
@@ -25,17 +38,17 @@ export default function HomeClientPage({ allPosts }) {
           <li>
             Career coaching:{" "}
             <a
-              href="https://www.yournextstep.com/job-search/jobs?what=Senior+Software+Engineer&where=Washington+DC"
-              target="_blank"
-            >
-              Intoo
-            </a>
-            &nbsp;or&nbsp;
-            <a
               href="https://leopard.fyi/engineer-signup/?mwr=90c3cb4c"
               target="_blank"
             >
               Leopard
+            </a>
+            &nbsp;or&nbsp;
+            <a
+              href="https://www.yournextstep.com/job-search/jobs?what=Senior+Software+Engineer&where=Washington+DC"
+              target="_blank"
+            >
+              Intoo
             </a>
           </li>
         </ol>

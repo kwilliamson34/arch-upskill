@@ -1,7 +1,7 @@
 ---
 title: "Edges"
 subtitle: "An overloaded word in software"
-date: "2024-09-01"
+date: "2024-09-04"
 status: "Not Started"
 ---
 
