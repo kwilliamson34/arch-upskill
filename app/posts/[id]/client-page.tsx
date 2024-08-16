@@ -13,7 +13,7 @@ export default function PostClientPage({ postData }: Props) {
         <Date dateString={postData.date} /> - {postData.status}
       </p>
       <div
-        className="text-md"
+        className="text-md mb-8"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
     </>

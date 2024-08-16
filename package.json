@@ -2,9 +2,9 @@
   "private": true,
   "name": "arch-upskill",
   "version": "1.0.0",
-  "packageManager": "npm@9.0.0",
   "sideEffects": false,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "analyze": "ANALYZE=true next build",
     "build": "next build",
     "dev": "next dev",
