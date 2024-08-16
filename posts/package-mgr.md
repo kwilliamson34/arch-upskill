@@ -2,10 +2,10 @@
 title: "Node package manager comparison"
 subtitle: "Yarn vs. NPM vs PNPM in 2024"
 date: "2024-08-16"
-status: "Not Started"
+status: "Done"
 ---
 
-NPM, Yarn, and pnpm are all package managers for Node.js that offer different advantages and trade-offs in terms of performance, features, and workflows. [good source](https://romanglushach.medium.com/comparing-npm-yarn-and-pnpm-package-managers-which-one-is-right-for-your-distributed-project-to-4d7de2f0db8e#:~:text=As%20you%20can%20see%2C%20PNPM,life%20easier%20as%20a%20developer.)
+NPM, Yarn, and PNPM are all package managers for Node.js that offer different advantages and trade-offs in terms of performance, features, and workflows. ([good source](https://romanglushach.medium.com/comparing-npm-yarn-and-pnpm-package-managers-which-one-is-right-for-your-distributed-project-to-4d7de2f0db8e#:~:text=As%20you%20can%20see%2C%20PNPM,life%20easier%20as%20a%20developer.))
 
 ### NPM
 
@@ -64,3 +64,14 @@ It is also easy to start using pnpm if you have used npm or yarn before because 
 1. Create a pnpm workspace yaml
 1. import (leverages lockfile from previous package manager to scaffold the new lockfile)
 1. install
+
+### Observed effects of pnpm
+
+- lockfile size decreased from 7k to 4k lines
+- pnpm i was noticeably faster (`Done in 4.2s`) than npm i (`added 494 packages, and audited 495 packages in 8s`)
+- pnpm demonstrated a cache hit the second time: `Progress: resolved 466, reused 466, downloaded 0, added 466, done`
+- pnpm eliminated redundancies in 2nd-level dependencies: 466 vs 494
+- Node modules size decreased very slightly with pnpm: 1MB
+- overall package size decreased very slightly when using "analyze" script: partial KB
+- don't need to use the `run` keyword for scripts with pnpm
+- pnpm command line output is more succinct and organized, but didn't show deprecated package warnings like npm did, out of the box
