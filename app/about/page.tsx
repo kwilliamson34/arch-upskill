@@ -144,7 +144,8 @@ export default function AboutPage() {
             can deliver 80% of the value in 20% of the time. I always strive to
             write clean, maintainable code, but my goal is creating value, not
             perfection. I learn more than enough to be dangerous, explore
-            multiple options, and avoid "one size fits all" decision-making.
+            multiple options, and avoid &quot;one size fits all&quot;
+            decision-making.
           </li>
         </ul>
       </section>
