@@ -1,13 +1,14 @@
-import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
+import Footer from "../components/footer";
+import Header from "../components/header";
 import "../styles/global.css";
 import { siteTitle } from "./constants";
-import Header from "../components/header";
-import Footer from "../components/footer";
 
 export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
+        <GoogleTagManager gtmId="G-R4HM6TPMV5" />
         <meta
           name="description"
           content="See how Katy learned to build a personal website using Next.js to track her course of study!"
