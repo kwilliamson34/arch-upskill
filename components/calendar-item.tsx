@@ -1,11 +1,11 @@
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import Date from "./date";
-import { FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from "react-icons/fa";
 import clsx from "clsx";
+import Link from "next/link";
+import { FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from "react-icons/fa";
+import utilStyles from "../styles/utils.module.css";
+import Date from "./date";
 
 interface Props {
-  post: Post;
+  post: PostMetadata;
   className: string | undefined;
 }
 

@@ -10,6 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const allPosts = await getSortedPosts();
-  return <HomeClientPage allPosts={allPosts} />;
+  return <HomeClientPage allPosts={getSortedPosts()} />;
 }

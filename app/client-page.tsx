@@ -1,7 +1,11 @@
 import Link from "next/link";
 import CalendarItem from "../components/calendar-item";
 
-export default function HomeClientPage({ allPosts }) {
+interface Props {
+  allPosts: PostMetadata[];
+}
+
+export default function HomeClientPage({ allPosts }: Props) {
   return (
     <>
       <section className="my-8">

@@ -1,8 +1,10 @@
 interface Post {
   id: string;
-  date: string;
   title: string;
-  subtitle: string;
-  status: string;
-  content?: any;
+  subtitle?: string;
+  date: string;
+  status: "Not Started" | "In Progress" | "Done with Todos" | "Done";
+  content: string;
 }
+
+type PostMetadata = Omit<Post, "content">;

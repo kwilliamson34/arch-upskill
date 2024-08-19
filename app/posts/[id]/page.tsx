@@ -15,7 +15,13 @@ export async function generateStaticParams() {
   return getAllPostsAsContextParams();
 }
 
-export default async function PostPage({ params }) {
+interface Props {
+  params: {
+    id: string;
+  };
+}
+
+export default async function PostPage({ params }: Props) {
   const post: Post = await getPostData(params.id);
   return <PostClientPage post={post} />;
 }

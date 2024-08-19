@@ -4,7 +4,7 @@ import path from "path";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getSortedPosts(): Post[] {
+export function getSortedPosts(): PostMetadata[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -17,7 +17,7 @@ export function getSortedPosts(): Post[] {
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
-    const meta = matterResult.data as Post;
+    const meta = matterResult.data as PostMetadata;
 
     // Combine the data with the id
     return {
