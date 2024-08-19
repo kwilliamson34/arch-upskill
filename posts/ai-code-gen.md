@@ -34,8 +34,9 @@ The chatbot has a Global Context where you can "chat with your codebase" and ask
 
 Questions posed:
 
-- is there a better way to read, parse, and render markdown than the way im doing it?
-- what other types should i consider defining?
+- is there a better way to read, parse, and render markdown than the way im doing it? (suggested a new component with a react utility; accepted)
+- what other types should i consider defining? (suggested 2 good ones and 6 unnecessary ones)
+- are there any typos in my project? (found a bunch, like incorrect blank target property, and mispelled words in markdown prose! but missed one in markdown metadata.)
 
 The answers were helpful but not drop-in ready. It also changed its mind (reversed position on modern way to parse markdown, after a follow-up question) and missed context (incorrectly detected page router instead of app router), leading to generic recommendations. I will keep using Cursor as I move forward and see how specific code suggestions improve.
 

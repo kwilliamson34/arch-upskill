@@ -9,7 +9,7 @@ status: "Done"
 
 https://nextjs.org/learn-pages-router/basics/deploying-nextjs-app
 
-The easiest way to deploy Next.js to production is to use the Vercel platform developed by the creators of Next.js, so it has has first-class support. Vercel is a serverless platform for static and hybrid applications.
+The easiest way to deploy Next.js to production is to use the Vercel platform developed by the creators of Next.js, so it has first-class support. Vercel is a serverless platform for static and hybrid applications.
 
 Once you’re signed up, import your nextjs-blog repository on Vercel. You can do so from here: https://vercel.com/import/git. You can use default values for the following settings — no need to change anything. Vercel automatically detects that you have a Next.js app and chooses optimal build settings for you.
 

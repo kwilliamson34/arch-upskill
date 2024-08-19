@@ -37,7 +37,7 @@ When your application has a .babelrc file, Next.js will automatically fall back 
 
 ### CSS Modules
 
-Early CSS was all global. This causes some problems: small changes create sweeping side effects, file becomes hige and unwieldy, etc.
+Early CSS was all global. This causes some problems: small changes create sweeping side effects, file becomes huge and unwieldy, etc.
 
 [CSS Modules](https://css-tricks.com/css-modules-part-1-need/) is not an official spec or an implementation in the browser, but rather a process in a build step (with the help of Webpack or Browserify) that changes class names and selectors to be scoped ("automatic class name generation"). Localized scoping is a big improvement for maintainability, but is a performance risk if not managed well.
 

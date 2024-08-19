@@ -27,7 +27,7 @@ export default function HomeClientPage({ allPosts }: Props) {
             and{" "}
             <a
               href="https://github.com/donnemartin/system-design-primer"
-              target="blank"
+              target="_blank"
             >
               System Design Primer
             </a>
