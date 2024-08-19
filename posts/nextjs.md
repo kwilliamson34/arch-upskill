@@ -17,11 +17,18 @@ status: "Done with Todos"
 
 Highlights below from https://nextjs.org/learn-pages-router
 
-### Router
+### Routing
 
-App Router is the newer and more recommended way, vs Page Router. The tutorial uses page router but i've updated this project after learning the difference. There is also a toggle built into the documentation navigation because the page router is still in heavy use publicly.
+App Router is the newer and more recommended way, vs Page Router. The tutorial uses page router but I've updated this project after learning the difference. There is also a toggle built into the documentation navigation because the page router is still in heavy use publicly.
 
-In version 13, Next.js introduced a new App Router built on React Server Components, which supports shared layouts, nested routing, loading states, error handling, and more. It has advantages for SPAs, over the old router. Re-rendering only the parts of pages that need it is a huge performance boost.
+In version 13, Next.js introduced a new App Router built on React Server Components, which supports shared layouts, nested routing, loading states, error handling, and more. It is server-centric, supports server compoennts, and performs better. It has advantages for SPAs; re-rendering only the parts of pages that need it is a huge performance boost.
+
+Moving to the App Router, the key concepts to understand are Server Components and Suspense.
+
+While [switching from PR to AR](https://nextjs.org/docs/pages/building-your-application/upgrading/app-router-migration), here were the main differences:
+
+- AR relies more on co-location and file hierarchy than explicit component references
+- `getServerSideProps`, `getStaticProps` and `getStaticPaths` from PR are no longer recommended in AR
 
 ### Assets, Metadata, and CSS
 
@@ -91,17 +98,6 @@ https://nextjs.org/docs/pages/building-your-application/configuring/preview-mode
 
 When you’re writing a draft on your headless CMS and want to preview the draft immediately on your page, you’d want Next.js to render these pages at request time instead of build time and fetch the draft content instead of the published content. You’d want Next.js to bypass Static Generation only for this specific case.
 
-### Routing
-
-NextJS offers two routers: The intro course leverages the Pages Router, but the App Router is newer, server-centric, supports server compoennts, and performs better.
-
-Moving to the App Router may be the first time using React features that Next.js builds on top of such as Server Components, Suspense, and more.
-
-While [switching from PR to AR](https://nextjs.org/docs/pages/building-your-application/upgrading/app-router-migration), here were the main differences:
-
-- AR relies more on co-location and file hierarchy than explicit component references
-- `getServerSideProps`, `getStaticProps` and `getStaticPaths` from PR are no longer recommended in AR
-
 ### Errors
 
 NextJS offers more convenience here. [The error.js file](https://nextjs.org/docs/app/building-your-application/routing/error-handling) convention allows you to gracefully handle unexpected runtime errors in nested routes, and specify custom behaviors.
@@ -111,6 +107,6 @@ NextJS offers more convenience here. [The error.js file](https://nextjs.org/docs
 - Isolate errors to affected segments while keeping the rest of the application functional.
 - Add functionality to attempt to recover from an error without a full page reload.
 
-TODO add some data storage, like lesson doneness
-TODO add tests
-TODO practice more with [debugging tools](https://nextjs.org/docs/pages/building-your-application/configuring/debugging)
+- TODO add some data storage, like lesson doneness
+- TODO add tests
+- TODO practice more with [debugging tools](https://nextjs.org/docs/pages/building-your-application/configuring/debugging)
