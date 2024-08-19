@@ -3,4 +3,4 @@ packages:
   - "app/**"
   - "components/**"
   # if required, exclude some directories
-  - '!**/test/**'
+  - "!**/test/**"

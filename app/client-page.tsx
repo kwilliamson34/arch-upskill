@@ -9,7 +9,7 @@ export default function HomeClientPage({ allPosts }) {
         <ol className="ml-8 list-decimal">
           <li>Learning goal</li>
           <li>
-            Code practice:{" "}
+            Algorithms and data structures practice:{" "}
             <a href="https://leetcode.com/explore/" target="_blank">
               Leetcode
             </a>{" "}
@@ -20,7 +20,7 @@ export default function HomeClientPage({ allPosts }) {
             <span className="underline">
               System Design Interview Insiders Vol 1
             </span>{" "}
-            or{" "}
+            and{" "}
             <a
               href="https://github.com/donnemartin/system-design-primer"
               target="blank"
@@ -29,7 +29,7 @@ export default function HomeClientPage({ allPosts }) {
             </a>
           </li>
           <li>
-            Keep-current reading:{" "}
+            Current events in tech:{" "}
             <a href="https://tldr.tech/" target="_blank">
               TLDR
             </a>
@@ -42,13 +42,6 @@ export default function HomeClientPage({ allPosts }) {
               target="_blank"
             >
               Leopard
-            </a>
-            &nbsp;or&nbsp;
-            <a
-              href="https://www.yournextstep.com/job-search/jobs?what=Senior+Software+Engineer&where=Washington+DC"
-              target="_blank"
-            >
-              Intoo
             </a>
           </li>
         </ol>

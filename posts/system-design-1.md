@@ -123,3 +123,9 @@ How Master Slave Replication Works
 - Application: slaves apply same changes in same order as master
 - Acknowledgment: usually master waits for acknowledgment from at least one slave before considering a transaction as committed (high data consistency, but also a latency hit)
 - Read distribution: Reads can be distributed among slaves to reduce load on the master
+
+### Edges
+
+An edge (or link) of a network (or graph) is one of the connections between the nodes (or vertices) of the network.
+
+What is edge location in networking? It is the connection or interface between a device or local network and the internet. The edge is close to the devices it is communicating with and is the entry point to the network. It is a prime location for Security and Performance/Cache considerations. E.g. CloudFront: You create a CloudFront distribution to tell CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery. Then CloudFront uses computers (edge servers) that are close to your viewers to deliver that content quickly when someone wants to see it or use it.
