@@ -1,6 +1,6 @@
 ---
 title: "Repeatable motion dev environment"
-subtitle: "How I set up my most efficent dev environment from scratch"
+subtitle: "Checklist for setting up efficent dev environment from scratch"
 date: "2024-07-30"
 status: "Done"
 ---
@@ -21,3 +21,4 @@ status: "Done"
 1. Helpful libs within projects: Tailwind, MUI/react-icons, Clsx, Date-fns, SWR
 1. Ensure Eslint and Prettier are available for the project
 1. Set up Typescript early: init tsconfig.json, strict mode, no nulls, make sure automatic imports work
+1. Consider AI code generation tools/workflows

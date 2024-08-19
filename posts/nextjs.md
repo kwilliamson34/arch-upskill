@@ -1,5 +1,5 @@
 ---
-title: "Basics of NextJS"
+title: "NextJS Refresher"
 subtitle: "What NextJS is great at, including when and how to Use Static Generation v.s. Server-side Rendering"
 date: "2024-07-31"
 status: "Done with Todos"
