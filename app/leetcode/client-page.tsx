@@ -1,12 +1,13 @@
 "use client";
+import MarkdownContent from "../../components/markdown-content";
 
-export default function LeetcodeClientPage({ html }) {
+export default function LeetcodeClientPage({ content }) {
   return (
     <>
       <a href="https://leetcode.com/explore/" target="_blank">
         Leetcode
       </a>
-      <div className="text-md" dangerouslySetInnerHTML={{ __html: html }} />
+      <MarkdownContent content={content} />
     </>
   );
 }

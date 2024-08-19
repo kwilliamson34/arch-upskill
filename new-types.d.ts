@@ -4,13 +4,5 @@ interface Post {
   title: string;
   subtitle: string;
   status: string;
-}
-
-interface PostData {
-  id: string;
-  date: any;
-  title: string;
-  subtitle: string;
-  status: string;
-  contentHtml: any;
+  content?: any;
 }

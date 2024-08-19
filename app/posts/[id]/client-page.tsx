@@ -1,21 +1,19 @@
 import Date from "../../../components/date";
+import MarkdownContent from "../../../components/markdown-content";
 
 interface Props {
-  postData: PostData;
+  post: Post;
 }
 
-export default function PostClientPage({ postData }: Props) {
+export default function PostClientPage({ post }: Props) {
   return (
     <>
-      <h1>{postData.title}</h1>
-      <h2>{postData.subtitle}</h2>
+      <h1>{post.title}</h1>
+      <h2>{post.subtitle}</h2>
       <p className="italic text-gray-700">
-        <Date dateString={postData.date} /> - {postData.status}
+        <Date dateString={post.date} /> - {post.status}
       </p>
-      <div
-        className="text-md mb-8"
-        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-      />
+      <MarkdownContent content={post.content} />
     </>
   );
 }

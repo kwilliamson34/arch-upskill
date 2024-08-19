@@ -5,9 +5,9 @@ import { siteTitle } from "../../constants";
 import PostClientPage from "./client-page";
 
 export async function generateMetadata({ params }): Promise<Metadata> {
-  const postData: PostData = await getPostData(params.id);
+  const post: Post = await getPostData(params.id);
   return {
-    title: `${siteTitle} - ${postData.title}`,
+    title: `${siteTitle} - ${post.title}`,
   };
 }
 
@@ -16,6 +16,6 @@ export async function generateStaticParams() {
 }
 
 export default async function PostPage({ params }) {
-  const postData: PostData = await getPostData(params.id);
-  return <PostClientPage postData={postData} />;
+  const post: Post = await getPostData(params.id);
+  return <PostClientPage post={post} />;
 }

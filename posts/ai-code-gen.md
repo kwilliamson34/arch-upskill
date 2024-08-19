@@ -2,16 +2,30 @@
 title: "AI for code generation"
 subtitle: "Tradeoffs of different tools and workflows"
 date: "2024-08-19"
-status: "Not Started"
+status: "In Progress"
 ---
 
-https://replit.com/
+[Battle of AI coding tools, 2023](https://e2b.dev/blog/github-copilot-vs-cursor-so-vs-aide-battle-of-ai-coding-tools)
 
-https://docs.anthropic.com/en/docs/welcome
+There has been a boom of AI-powered coding tools. They have been a big topic, as people are trying to test as many of them as possible. The blog above compared the more established GitHub Copilot with two newly launched AI coding copilots, Cursor and Aide, both built as a modification of VSCode.
 
-Copilot
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Sweep](https://sweep.dev/)
+- [GPT Engineer](https://github.com/AntonOsika/gpt-engineer)
+- [codium](https://www.codium.ai/)
+- [Open Interpreter](https://openinterpreter.com/)
+- [Replit](https://replit.com/) / [Anthropic](https://docs.anthropic.com/en/docs/welcome) / [Vellum](https://www.vellum.ai/)
+- [Cursor](https://cursor.so/)
+- [Aide](https://codestory.ai/)
 
-https://cursor.so/
+### GitHub Copilot
 
-Vellum
-Developer platform for building production-worthy applications on LLMs like OpenAI’s GPT-3 or Anthropic’s Claude.
+Copilot is the established player, but only about 3 years old. Created by Microsoft-backed OpenAI. It has been trained on a selection of English language and source code from publicly available sources, including code in public repositories on GitHub.
+
+There is no free tier.
+
+### Cursor
+
+Cursor by Anyspehere is an AI-powered code editor that recently gained big popularity. The IDE is a fork of VSCode, it can generate code from scratch, ask questions about your codebase, edit code with prompts, debug the code, or explain it. Cursor is currently being developed by a small team and is described by them as an "attempt at a new way to write code."
+
+While Cursor is its own IDE, during setup it allowed me to import my VSCode extensions and even my workspace.
