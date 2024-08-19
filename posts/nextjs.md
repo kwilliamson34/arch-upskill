@@ -17,17 +17,19 @@ status: "Done with Todos"
 
 Highlights below from https://nextjs.org/learn-pages-router
 
-### Create a Next.js App
+### Router
 
-TODO finished the module but need to fill in notes
+App Router is the newer and more recommended way, vs Page Router. The tutorial uses page router but i've updated this project after learning the difference. There is also a toggle built into the documentation navigation because the page router is still in heavy use publicly.
 
-### Navigate Between Pages
-
-TODO finished the module but need to fill in notes
+In version 13, Next.js introduced a new App Router built on React Server Components, which supports shared layouts, nested routing, loading states, error handling, and more. It has advantages for SPAs, over the old router. Re-rendering only the parts of pages that need it is a huge performance boost.
 
 ### Assets, Metadata, and CSS
 
-TODO finished the module but need to fill in notes
+Next.js has built-in support for CSS and Sass.
+
+NextJS also has some optimized components, like Image, which abstracts the cruft of responsively sizing images for different browsers and platforms.
+
+SEO metadata is a first-class concern and can be easily implemented for each page, statically or dynamicaally. Next.js will automatically generate the relevant head elements for your pages on the server-side.
 
 ### Pre-rendering and Data Fetching
 
@@ -62,10 +64,6 @@ You should ask yourself: "Can I pre-render this page **ahead** of a user's reque
 On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
 
 In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
-
-### Page Path Depends on External Data
-
-TODO finished the module but need to fill in notes
 
 ### API Routes
 
@@ -113,8 +111,6 @@ NextJS offers more convenience here. [The error.js file](https://nextjs.org/docs
 - Isolate errors to affected segments while keeping the rest of the application functional.
 - Add functionality to attempt to recover from an error without a full page reload.
 
-TODO add a request handler
 TODO add some data storage, like lesson doneness
 TODO add tests
-TODO practice with [debugging tools](https://nextjs.org/docs/pages/building-your-application/configuring/debugging)
-TODO more thorough with typescript types
+TODO practice more with [debugging tools](https://nextjs.org/docs/pages/building-your-application/configuring/debugging)
