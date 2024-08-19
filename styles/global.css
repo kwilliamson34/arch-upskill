@@ -22,7 +22,7 @@
 
     a {
       text-decoration: none;
-      @apply text-gray-700;
+      @apply !text-gray-700;
     }
   }
 }
