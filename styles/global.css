@@ -14,12 +14,16 @@
   }
   h3 {
     @apply text-lg;
-    @apply font-mono;
     @apply text-gray-700;
     @apply bg-gray-100;
     @apply rounded;
     padding: 0 0.75rem;
     margin-top: 1.5rem;
+
+    a {
+      text-decoration: none;
+      @apply text-gray-700;
+    }
   }
 }
 
