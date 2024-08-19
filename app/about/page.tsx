@@ -41,9 +41,12 @@ export default function AboutPage() {
           >
             hybrid app
           </a>{" "}
-          back when they were cool. Thus I was launched as a web app engineer,
-          evolving over many different projects and teams to become the tech
-          lead I am today.
+          back when they were cool. Thus I was launched as a web app engineer.
+          Through my time at Sapient (almost 7 years) and Storyblocks (almost 4
+          years), I have been lucky enough to work on 5+ distinct web products
+          and 7+ distinct teams. I have formed, stormed, normed, and performed,
+          and it&apos;s taught me so much about how to work with different kinds
+          of people, towards different objectives.
         </p>
         <p>
           Besides software, I care about gardening and{" "}
@@ -54,50 +57,25 @@ export default function AboutPage() {
             green roofs
           </a>
           , backpacking in national parks, scuba diving, watercolor painting,
-          Orange Theory Fitness, coffee, and the DMV food scene.
+          Orange Theory Fitness, coffee, and the DMV food scene. See more on{" "}
+          <a href="https://www.linkedin.com/in/kcww" target="_blank">
+            LinkedIn
+          </a>
+          .
         </p>
-      </section>
-      <section>
-        <a href="https://www.linkedin.com/in/kcww" target="_blank">
-          LinkedIn
-        </a>
       </section>
       <section>
         <h2>Values</h2>
         <ul>
           <li>
-            <strong>Short feedback loops.</strong> Feedback loops should be
-            short enough that the value of learning outweighs the cost of being
-            wrong. I have the agency, and contribute to a team culture that
-            cultivates the agency, to adjust when we learn something new. I
-            collect data, review, learn, decide, and adjust. I fail fast, when
-            failure isn&apos;t too expensive. I subscribe to YAGNI (You
-            Aren&apos;t Going To Need It) and build incrementally with
-            confidence, rather than over-engineering at the start. (
-            <a
-              href="https://developertea.com/episodes/e8545729-3383-4d50-a48a-1ce0919c1889"
-              target="_blank"
-            >
-              hear more
-            </a>
-            ) (
-            <a
-              href="https://www.tatvasoft.com/outsourcing/2022/05/software-development-principles.html"
-              target="_blank"
-            >
-              read more
-            </a>
-            )
-          </li>
-          <li>
             <strong>Refuse to be blocked.</strong> When I don&apos;t have the
             right obvious answer, I will commit, and contribute to a culture of
-            committing, to a course of action to move forward. Endless churn is
-            bad. Spending too much time to achieve consensus is bad. But
-            &quot;disagree and commit&quot; isn&apos;t quite right. I
-            constructively debate, communicate clearly, document decisions,
-            bring people along, and adjust in the face of new information; but I
-            refuse to be blocked. (
+            committing, to a course of action to move forward. I am wary of
+            spending too much time to achieve consensus, focusing instead on
+            building trusting relationships by doing good work and being
+            accountable. &quot;Disagree and commit&quot; isn&apos;t quite right;
+            I constructively debate, communicate clearly, document decisions,
+            bring people along, and adjust in the face of new information. (
             <a
               href="https://gavinadams.com/disagree-and-commit/"
               target="_blank"
@@ -132,6 +110,28 @@ export default function AboutPage() {
             mistakes. (
             <a
               href="https://hackernoon.com/put-your-ego-aside-humility-and-confidence-in-software-development"
+              target="_blank"
+            >
+              read more
+            </a>
+            )
+          </li>
+          <li>
+            <strong>Short feedback loops.</strong> Feedback loops should be
+            short enough that the value of learning outweighs the cost of being
+            wrong. I have the agency to, and contribute to a team culture of,
+            adjusting when we learn something new. I subscribe to YAGNI (You
+            Aren&apos;t Going To Need It) and build incrementally with
+            confidence, rather than over-engineering at the start. (
+            <a
+              href="https://developertea.com/episodes/e8545729-3383-4d50-a48a-1ce0919c1889"
+              target="_blank"
+            >
+              hear more
+            </a>
+            ) (
+            <a
+              href="https://www.tatvasoft.com/outsourcing/2022/05/software-development-principles.html"
               target="_blank"
             >
               read more
