@@ -4,18 +4,21 @@ import { FaCheck, FaCheckDouble, FaQuestion, FaSpinner } from "react-icons/fa";
 import utilStyles from "../styles/utils.module.css";
 import Date from "./date";
 
-interface Props {
+export default function CalendarItem({
+  post,
+  className,
+}: {
   post: PostMetadata;
   className: string | undefined;
-}
-
-export default function CalendarItem({ post, className = "" }: Props) {
+}) {
   if (post.title === "Blank") {
     return (
       <div className={clsx(utilStyles.cardBlank, className)}>
         <Date dateString={post.date} />
         <br />
-        Break
+        <p className="text-sm italic">
+          {post.subtitle ? post.subtitle : "Break"}
+        </p>
       </div>
     );
   }

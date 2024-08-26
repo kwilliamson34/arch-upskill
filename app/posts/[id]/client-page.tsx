@@ -1,11 +1,7 @@
 import Date from "../../../components/date";
 import MarkdownContent from "../../../components/markdown-content";
 
-interface Props {
-  post: Post;
-}
-
-export default function PostClientPage({ post }: Props) {
+export default function PostClientPage({ post }: { post: Post }) {
   return (
     <>
       <h1>{post.title}</h1>

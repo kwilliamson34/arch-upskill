@@ -4,7 +4,7 @@ import Header from "../components/header";
 import "../styles/global.css";
 import { siteTitle } from "./constants";
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>

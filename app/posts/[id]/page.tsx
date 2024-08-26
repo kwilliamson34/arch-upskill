@@ -4,7 +4,11 @@ import { getAllPostsAsContextParams, getPostData } from "../../../lib/posts";
 import { siteTitle } from "../../constants";
 import PostClientPage from "./client-page";
 
-export async function generateMetadata({ params }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
   const post: Post = await getPostData(params.id);
   return {
     title: `${siteTitle} - ${post.title}`,
@@ -15,13 +19,7 @@ export async function generateStaticParams() {
   return getAllPostsAsContextParams();
 }
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
-
-export default async function PostPage({ params }: Props) {
+export default async function PostPage({ params }: { params: { id: string } }) {
   const post: Post = await getPostData(params.id);
   return <PostClientPage post={post} />;
 }

@@ -21,4 +21,4 @@ status: "Done"
 1. Helpful libs within projects: Tailwind, MUI/react-icons, Clsx, Date-fns, SWR
 1. Ensure Eslint and Prettier are available for the project
 1. Set up Typescript early: init tsconfig.json, strict mode, no nulls, make sure automatic imports work
-1. Consider AI code generation tools/workflows
+1. Consider AI code generation tools/workflows. For this project, I'm now using the Cursor IDE with built-in autocomplete and chatbot. It imported the VSCode settings and extensions I had set up previously (except I had to ask the bot how to re-setup "format on save").

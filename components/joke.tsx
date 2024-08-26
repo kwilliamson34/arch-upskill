@@ -9,7 +9,7 @@ async function Fallback() {
   );
 }
 
-async function Joke() {
+async function Joke(): Promise<JSX.Element | null> {
   try {
     const response = await fetch(
       "https://official-joke-api.appspot.com/random_joke"
@@ -25,9 +25,12 @@ async function Joke() {
         <p className="italic">{json.punchline}</p>
       </>
     );
-  } catch (error) {
-    console.error(error.message);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
   }
+  return null;
 }
 
 export default function JokeWrapper() {
