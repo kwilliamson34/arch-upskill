@@ -57,3 +57,7 @@ TODO
 - @next/bundle-analyzer
 - [optimizePackageImports](https://nextjs.org/docs/app/api-reference/next-config-js/optimizePackageImports)
 - Ensure no compilers transform your ES2015 module syntax into CommonJS modules (this is the default behavior of the popular Babel preset @babel/preset-env - see the documentation for more details).
+
+### Parcel
+
+TODO

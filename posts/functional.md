@@ -1,7 +1,7 @@
 ---
 title: "Level Up on Functional Programming"
 subtitle: "Misc readings and tutorials"
-date: "2024-09-03"
+date: "2024-08-26"
 status: "Not Started"
 ---
 

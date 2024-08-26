@@ -15,7 +15,7 @@ export default function CalendarItem({ post, className = "" }: Props) {
       <div className={clsx(utilStyles.cardBlank, className)}>
         <Date dateString={post.date} />
         <br />
-        Break + Re-read notes
+        Break
       </div>
     );
   }

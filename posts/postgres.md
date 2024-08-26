@@ -1,7 +1,7 @@
 ---
 title: "Basics of Postgres"
 subtitle: "101 course on Serverless SQL"
-date: "2024-08-27"
+date: "2024-08-30"
 status: "Not Started"
 ---
 
