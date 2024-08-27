@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import path from "path";
 import { getContentFromMd } from "../../lib/posts";
 import { siteTitle } from "../constants";
-import LeetcodeClientPage from "./client-page";
+import MarkdownContent from "../../components/markdown-content";
 
 export const metadata: Metadata = {
   title: `${siteTitle} - Leetcode Learnings`,
@@ -16,5 +16,12 @@ async function getContent() {
 
 export default async function LeetcodePage() {
   const content = await getContent();
-  return <LeetcodeClientPage content={content} />;
+  return (
+    <>
+      <a href="https://leetcode.com/explore/" target="_blank">
+        Leetcode
+      </a>
+      <MarkdownContent content={content} />
+    </>
+  );
 }

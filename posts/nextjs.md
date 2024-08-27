@@ -55,6 +55,15 @@ Next.js has two forms of pre-rendering: Static Generation and Server-side Render
 
 https://nextjs.org/docs/basic-features/pages#static-generation-recommended
 
+### Server components and client components
+
+A component transforms into a client component under two primary scenarios:
+
+1. Explicit Declaration: By adding 'use client' at the beginning of a component, developers explicitly instruct the framework to treat this component as a client-side entity, irrespective of its original context.
+2. Importation into a Client Component: Any component, regardless of being a server component initially, will morph into a client component if it’s imported into another client component. This behavior underscores the importance of understanding component dependencies and their execution context.
+
+Cursor AI helped me out here-- I asked "am i using client vs server optimally for performance?" in a global scope and got actionable suggestions.
+
 ### Dynamic paths
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
