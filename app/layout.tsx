@@ -37,9 +37,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="favicon_/favicon-16x16.png"
+          href="/favicon_io/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest"></link>
+        <link rel="manifest" href="/favicon_io/site.webmanifest"></link>
       </head>
 
       <body className="flex min-h-screen flex-col">
