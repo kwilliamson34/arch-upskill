@@ -101,13 +101,11 @@ export default function AboutPage() {
             )
           </li>
           <li>
-            <strong>Low ego.</strong> I&apos;m a low ego engineer, and while I
-            can work effectively with all types of people, I love working with
-            low ego people and find it builds immense trust. Low ego means: I
-            spend time listening and considering before asserting. I approach
-            everything with curiosity and a desire to learn. I value the right
-            answer over being right. I am honest, transparent, and I admit
-            mistakes. (
+            <strong>Low ego.</strong> I&apos;m a low ego engineer, which helps
+            me learn and build trusting relationships. I spend time listening
+            and considering before asserting. I approach everything with
+            curiosity and a desire to learn. I am honest, transparent, and
+            authentic. I value the right answer over being right. (
             <a
               href="https://hackernoon.com/put-your-ego-aside-humility-and-confidence-in-software-development"
               target="_blank"
@@ -119,10 +117,9 @@ export default function AboutPage() {
           <li>
             <strong>Short feedback loops.</strong> Feedback loops should be
             short enough that the value of learning outweighs the cost of being
-            wrong. I have the agency to, and contribute to a team culture of,
-            adjusting when we learn something new. I subscribe to YAGNI (You
-            Aren&apos;t Going To Need It) and build incrementally with
-            confidence, rather than over-engineering at the start. (
+            wrong. I have the agency to adjust, and contribute to a team culture
+            of adjusting, when we learn something new. I build incrementally
+            with confidence, rather than over-engineering at the start. (
             <a
               href="https://developertea.com/episodes/e8545729-3383-4d50-a48a-1ce0919c1889"
               target="_blank"
@@ -140,12 +137,12 @@ export default function AboutPage() {
           </li>
           <li>
             <strong>Make good tradeoffs.</strong> I am idealistic and practical
-            at the same time. With creativity, and data-based decision making, I
-            can deliver 80% of the value in 20% of the time. I always strive to
-            write clean, maintainable code, but my goal is creating value, not
-            perfection. I learn more than enough to be dangerous, explore
-            multiple options, and avoid &quot;one size fits all&quot;
-            decision-making.
+            at the same time. I employ creativity, critical thinking, research,
+            and data-based decision making to solve problems efficiently. I
+            always strive to write clean, maintainable code&mdash; but my goal
+            is creating value, not being perfect. I learn more than enough to be
+            dangerous, explore multiple options, and avoid &quot;one size fits
+            all&quot; decision-making.
           </li>
         </ul>
       </section>
