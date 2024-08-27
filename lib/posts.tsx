@@ -4,7 +4,7 @@ import path from "path";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getSortedPosts(): PostMetadata[] {
+export function getAllPosts(): PostMetadata[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -25,14 +25,20 @@ export function getSortedPosts(): PostMetadata[] {
       id,
     };
   });
-  // Sort posts by date
-  return allPostsData.sort((a, b) => {
-    if (a.date > b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return allPostsData;
+}
+
+export function sortByDate(allPostsData: PostMetadata[]): PostMetadata[] {
+  return allPostsData
+    .filter((post) => !!post.date)
+    .sort((a, b) => {
+      if (!!b.date && !a.date) return -1;
+      return a.date > b.date ? 1 : -1;
+    });
+}
+
+export function getUndated(allPostsData: PostMetadata[]): PostMetadata[] {
+  return allPostsData.filter((post) => !post.date);
 }
 
 export function getAllPostsAsContextParams(): { params: { id: string } }[] {

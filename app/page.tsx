@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getSortedPosts } from "../lib/posts";
+import { getAllPosts, sortByDate, getUndated } from "../lib/posts";
 import HomeClientPage from "./client-page";
 import { siteTitle } from "./constants";
 
@@ -10,5 +10,11 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  return <HomeClientPage allPosts={getSortedPosts()} />;
+  const allPosts = getAllPosts();
+  return (
+    <HomeClientPage
+      sortedPosts={sortByDate(allPosts)}
+      undatedPosts={getUndated(allPosts)}
+    />
+  );
 }

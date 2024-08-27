@@ -14,7 +14,7 @@ export default function CalendarItem({
   if (post.title === "Blank") {
     return (
       <div className={clsx(utilStyles.cardBlank, className)}>
-        <Date dateString={post.date} />
+        {post.date && <Date dateString={post.date} />}
         <br />
         <p className="text-sm italic">
           {post.subtitle ? post.subtitle : "Break"}
@@ -49,7 +49,7 @@ export default function CalendarItem({
         &nbsp;{post.title}
         <p className="text-sm italic">{post.subtitle}</p>
         <p className="text-sm text-gray-500">
-          <Date dateString={post.date} />
+          {post.date ? <Date dateString={post.date} /> : "Unscheduled"}
         </p>
       </div>
     </Link>

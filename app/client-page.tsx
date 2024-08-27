@@ -1,10 +1,13 @@
+"use client";
 import Link from "next/link";
 import CalendarItem from "../components/calendar-item";
 
 export default function HomeClientPage({
-  allPosts,
+  sortedPosts,
+  undatedPosts,
 }: {
-  allPosts: PostMetadata[];
+  sortedPosts: PostMetadata[];
+  undatedPosts: PostMetadata[];
 }) {
   return (
     <>
@@ -59,7 +62,10 @@ export default function HomeClientPage({
           <div className="hidden h-6 text-center lg:block">W</div>
           <div className="hidden h-6 text-center lg:block">Th</div>
           <div className="hidden h-6 text-center lg:block">F</div>
-          {allPosts.map((post) => (
+          {sortedPosts.map((post) => (
+            <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
+          ))}
+          {undatedPosts.map((post) => (
             <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
           ))}
         </div>
