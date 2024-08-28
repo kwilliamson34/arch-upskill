@@ -69,27 +69,29 @@ export default function AboutPage() {
                   </li>
                   <li>
                     Scuba diving. I&apos;m open water certified and love to
-                    travel to dive/dive to travel! I love sea turtles but have a
-                    borderline phobia of jellyfish.
+                    travel to dive/dive to travel! From the top-20 dive sites in
+                    the world, I have checked off the Galapagos and the Manta
+                    Ray Night Dive in Hawaii.
                   </li>
                   <li>
                     Watercolor painting. While my skills are amateur, I make a
-                    mean greeting card!
+                    mean greeting card.
                   </li>
                   <li>
-                    Gardening and urban greenery. I always have 20 home-grown
+                    Gardening and urban greenery. I always have home-grown
                     tomatoes on hand, know the scientific names of my shrubs,
                     and have fond memories of pushing for{" "}
                     <a
                       href="https://www.earthday.org/actions/call-for-green-spaces"
                       target="_blank"
                     >
-                      green roof policy
+                      green roof
                     </a>{" "}
-                    while interning for Earth Day Network.
+                    policy while interning for Earth Day Network.
                   </li>
                   <li>
                     Orange Theory Fitness. Member of the HIIT squad since 2015.
+                    Maybe the only person you know who loves treadmills.
                   </li>
                   <li>
                     Coffee. I don&apos;t go a day without it, and I love trying
@@ -97,10 +99,11 @@ export default function AboutPage() {
                     found a love for fermented beans.
                   </li>
                   <li>
-                    The DMV food scene. There&nbsp;s always something new to try
+                    The DMV food scene. There&apos;s always something new to try
                     in DC. If I could only pick one cuisine for the rest of my
                     life, it would be Thai.
                   </li>
+                  <li>Lists, apparently.</li>
                 </ul>
               </p>
             </section>
@@ -151,26 +154,27 @@ export default function AboutPage() {
                 skills in front-end and back-end development. I was promoted
                 quickly, with increasing leadership responsibilities, due to my
                 ability to break down and deliver complex projects efficiently,
-                as well as critical thinking and enjoyment of strategic
-                roadmapping to influence decision-making.
+                and my readiness to think critically about business problems,
+                strategy, and continuous improvement.
               </p>
               <p>
-                Then I joined Storyblocks, as a fullstack engineer, where I took
-                on larger and larger roles, from Lead Engineer to Engineering
-                Manager. I led multiple high-impact projects, including Creative
-                + workflow Tools that expanded the Storyblocks platform
-                (canvas-based video editor, AI-based feature, Adobe plugin) and
-                significant product growth initiatives (pricing overhaul, stack
-                modernization, core web vitals, SEO). My ability to technically
-                direct my teams after layoffs was crucial in driving these
-                successes.
+                Then I joined Storyblocks as a fullstack engineer, and took on
+                larger and larger roles, from Lead Engineer to Engineering
+                Manager. I led multiple high-impact projects, from creative
+                tools and workflows that expanded the Storyblocks platform (e.g.
+                canvas-based video editor, AI feature, Adobe plugin) to
+                significant product growth initiatives (e.g. plans overhaul,
+                stack modernization, core web vitals, SEO). My ability to
+                technically direct my teams after layoffs, and be a trusted
+                thought partner to Product and Design, was crucial in driving
+                these successes.
               </p>
               <p>
                 I pride myself on my strong cross-functional collaboration
-                skills, and an ownership mindset that drives me to see projects
-                through, from ideation to execution and beyond. I thrive in
-                environments where I can combine my technical expertise with
-                strategic thinking to make innovation possible and practical.
+                skills, and applying an ownership mindset to all stages of
+                development. I thrive in environments where I can apply my
+                technical expertise and strategic thinking to make innovation
+                possible and practical.
               </p>
               <p>
                 See more on{" "}
@@ -185,14 +189,11 @@ export default function AboutPage() {
               <ul>
                 <li>
                   <strong>Refuse to be blocked.</strong> When I don&apos;t have
-                  the right obvious answer, I will commit, and contribute to a
-                  culture of committing, to a course of action to move forward.
-                  I am wary of spending too much time to achieve consensus,
-                  focusing instead on building trusting relationships by doing
-                  good work and being accountable. &quot;Disagree and
-                  commit&quot; isn&apos;t quite right; I constructively debate,
-                  communicate clearly, document decisions, bring people along,
-                  and adjust in the face of new information. (
+                  the right obvious answer, I will commit to a course of action
+                  to move forward. I know I can learn enough to unblock myself
+                  (and I do it often). I constructively debate, communicate
+                  clearly, document decisions, bring people along, and adjust in
+                  the face of new information. (
                   <a
                     href="https://gavinadams.com/disagree-and-commit/"
                     target="_blank"
@@ -219,12 +220,12 @@ export default function AboutPage() {
                   )
                 </li>
                 <li>
-                  <strong>Low ego.</strong> I&apos;m a low ego engineer, which
-                  helps me learn and build trusting relationships. I spend time
-                  listening and considering before asserting. I approach
-                  everything with curiosity and a desire to learn. I am honest,
-                  transparent, and authentic. I value the right answer over
-                  being right. (
+                  <strong>Low ego.</strong> I&apos;m a low ego engineer,
+                  committed to showing over telling, which helps me learn and
+                  build trusting relationships. I spend time listening and
+                  considering before asserting. I approach everything with
+                  curiosity and a desire to learn. I am honest, transparent, and
+                  authentic. I value the right answer over being right. (
                   <a
                     href="https://hackernoon.com/put-your-ego-aside-humility-and-confidence-in-software-development"
                     target="_blank"
