@@ -16,7 +16,7 @@ status: "Done"
 1. Establish some browser bookmarks: Blogs, Tools, Diagramming, Actions, Tutorials, Cheatsheets, etc
 1. File system: Set up GitHub folder and create VSCode workspace. View Hidden Files in Finder with Cmd + Shift + .
 1. Install NodeJS
-1. Install Homebrew + Git + NVM from command line
+1. Install Homebrew + Git + NVM from command line. Initialize `~/.zshrc` with `source ~/.nvm/nvm.sh`.
 1. Install GitHub Desktop
 1. Helpful libs within projects: Tailwind, MUI/react-icons, Clsx, Date-fns, SWR
 1. Ensure Eslint and Prettier are available for the project

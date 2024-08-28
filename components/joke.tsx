@@ -28,6 +28,14 @@ async function Joke(): Promise<JSX.Element | null> {
   } catch (error: unknown) {
     if (error instanceof Error) {
       console.error(error.message);
+    } else if (
+      typeof error === "object" &&
+      error !== null &&
+      "message" in error
+    ) {
+      console.error(error.message);
+    } else {
+      console.error("An unknown error occurred");
     }
   }
   return null;
