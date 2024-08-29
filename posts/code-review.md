@@ -1,6 +1,6 @@
 ---
 title: "Code Review Standards"
-subtitle: "101 course"
+subtitle: "My personal philosophy and community discussion"
 status: "Not Started"
 ---
 
