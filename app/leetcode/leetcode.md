@@ -22,7 +22,7 @@
 - Lookups for Hash tables are near constant time (barring collisions)
 - Set syntax: notice initailization, iteration, and has()
 
-```
+```typescript
 let num_set: Set<number> = new Set(nums);
     for (let num of num_set) {
         if (!num_set.has(num - 1)) {

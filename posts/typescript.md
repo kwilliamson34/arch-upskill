@@ -106,7 +106,7 @@ Literal types are a type-level addition to JS.
 
 Enums are a feature added to JavaScript by TypeScript which allows for describing a value which could be one of a set of possible named constants. Unlike most TypeScript features, this is not a type-level addition to JavaScript but something added to the language and runtime. Because of this, it’s a feature which you should know exists, but maybe hold off on using unless you are sure. You can read more about enums in the [Enum reference page](https://www.typescriptlang.org/docs/handbook/enums.html).
 
-```
+```typescript
 enum LogLevel {
   ERROR,
   WARN,
@@ -118,25 +118,25 @@ enum LogLevel {
 This is equivalent to:
 type LogLevelStrings = 'ERROR' | 'WARN' | 'INFO' | 'DEBUG';
 
-```
+```typescript
 type LogLevelStrings = keyof typeof LogLevel;
 ```
 
 In modern TypeScript, you may not need an enum when an object with as const could suffice:
 
-```
+```typescript
 const enum EDirection {
-Up,
-Down,
-Left,
-Right,
+  Up,
+  Down,
+  Left,
+  Right,
 }
 
 const ODirection = {
-Up: 0,
-Down: 1,
-Left: 2,
-Right: 3,
+  Up: 0,
+  Down: 1,
+  Left: 2,
+  Right: 3,
 } as const;
 ```
 

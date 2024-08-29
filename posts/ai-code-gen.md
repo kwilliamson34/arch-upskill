@@ -26,7 +26,7 @@ There is no free tier.
 
 ### Cursor
 
-Cursor by Anyspehere is an AI-powered code editor that recently gained big popularity. The IDE is a fork of VSCode, it can generate code from scratch, ask questions about your codebase, edit code with prompts, debug the code, or explain it. Cursor is currently being developed by a small team and is described by them as an "attempt at a new way to write code."
+Cursor by Anysphere is an AI-powered code editor that recently gained big popularity. The IDE is a fork of VSCode, it can generate code from scratch, ask questions about your codebase, edit code with prompts, debug the code, or explain it. Cursor is currently being developed by a small team and is described by them as an "attempt at a new way to write code."
 
 While Cursor is its own IDE, during setup it allowed me to import my VSCode extensions and even my workspace. The theme/color scheme is a bit different, and less polished, so it may take some getting used to.
 

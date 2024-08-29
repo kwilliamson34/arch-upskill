@@ -14,7 +14,7 @@ export default async function HomePage() {
   return (
     <>
       <section className="my-8">
-        <h2 className="container mb-4">Learning Goal Calendar</h2>
+        <h2 className="mb-4">Learning Calendar</h2>
         <div className="grid grid-cols-1 lg:grid-cols-5">
           <div className="hidden h-6 text-center lg:block">M</div>
           <div className="hidden h-6 text-center lg:block">T</div>
@@ -31,7 +31,7 @@ export default async function HomePage() {
       </section>
 
       <section className="my-8">
-        <h2 className="container mb-4">My helpful links</h2>
+        <h2 className="mb-4">Learning Links</h2>
         <ol className="ml-8 list-decimal">
           <li>
             Algorithms and data structures practice:{" "}

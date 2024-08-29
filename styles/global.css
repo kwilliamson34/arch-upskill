@@ -62,7 +62,7 @@ code {
   @apply bg-gray-100;
   @apply rounded;
   @apply text-sm;
-  padding: 0.25rem;
+  padding: 0.25rem 0;
 }
 
 ol {

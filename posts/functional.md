@@ -22,15 +22,11 @@ Key aspects of point-free style:
 
 Example in JavaScript:
 
-```
+```javascript
 const add = (x, y) => x + y;
-const double = x => x * 2;
-
-// Not point-free
-const addThenDouble = x => double(add(x, 1));
-
-// Point-free
-const addThenDouble = compose(double, add(1));
+const double = (x) => x * 2;
+const addThenDouble = (x) => double(add(x, 1)); // Not point-free
+const addThenDouble = compose(double, add(1)); // Point-free
 ```
 
 Other principles:
@@ -100,13 +96,13 @@ Lambda in AWS:
 
 Example AWS Lambda function in Node.js:
 
-```
+```javascript
 exports.handler = async (event) => {
-    // Function logic here
-    return {
-        statusCode: 200,
-        body: JSON.stringify('Hello from Lambda!'),
-    };
+  // Function logic here
+  return {
+    statusCode: 200,
+    body: JSON.stringify("Hello from Lambda!"),
+  };
 };
 ```
 

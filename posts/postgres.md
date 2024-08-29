@@ -78,7 +78,7 @@ It's a common mistake to start selecting before appropriate joins are made. For 
 
 Transactions group a set of tasks into a single execution unit. If any error occurs with any of the tasks (SQL statements), all changes need to be aborted. The process of reversing changes is called rollback. This command can only be used to undo transactions since the last COMMIT or ROLLBACK command was issued. SAVEPOINT can also be defined within a transaction, so you can roll the transaction back partially.
 
-```
+```sql
 BEGIN TRANSACTION transaction_name ;
 SET TRANSACTION [ READ WRITE | READ ONLY ];
 ...
