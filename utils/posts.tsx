@@ -1,10 +1,11 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import { cache } from "react";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getAllPosts(): PostMetadata[] {
+export const getAllPosts = cache((): PostMetadata[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -26,18 +27,32 @@ export function getAllPosts(): PostMetadata[] {
     };
   });
   return allPostsData;
-}
+});
 
-export function sortByDate(allPostsData: PostMetadata[]): PostMetadata[] {
+export const sortByDate = cache((): PostMetadata[] => {
+  const allPostsData = getAllPosts();
   return allPostsData
     .filter((post) => !!post.date)
     .sort((a, b) => {
       if (!!b.date && !a.date) return -1;
       return a.date > b.date ? 1 : -1;
     });
+});
+
+export function getNextPrevPost(id: string): {
+  next: PostMetadata;
+  prev: PostMetadata;
+} {
+  const sortedPostsData = sortByDate().filter((post) => post.title !== "Blank");
+  const index = sortedPostsData.findIndex((post) => post.id === id);
+  return {
+    next: sortedPostsData[index + 1],
+    prev: sortedPostsData[index - 1],
+  };
 }
 
-export function getUndated(allPostsData: PostMetadata[]): PostMetadata[] {
+export function getUndated(): PostMetadata[] {
+  const allPostsData = getAllPosts();
   return allPostsData.filter((post) => !post.date);
 }
 

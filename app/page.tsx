@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getAllPosts, sortByDate, getUndated } from "../lib/posts";
+import { getAllPosts, sortByDate, getUndated } from "../utils/posts";
 import { siteTitle } from "./constants";
 import Link from "next/link";
 import CalendarItem from "../components/calendar-item";
@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const allPosts = getAllPosts();
   return (
     <>
       <section className="my-8">
@@ -22,10 +21,10 @@ export default async function HomePage() {
           <div className="hidden h-6 text-center lg:block">W</div>
           <div className="hidden h-6 text-center lg:block">Th</div>
           <div className="hidden h-6 text-center lg:block">F</div>
-          {sortByDate(allPosts).map((post) => (
+          {sortByDate().map((post) => (
             <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
           ))}
-          {getUndated(allPosts).map((post) => (
+          {getUndated().map((post) => (
             <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
           ))}
         </div>

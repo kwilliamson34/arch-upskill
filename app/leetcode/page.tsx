@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import path from "path";
-import { getContentFromMd } from "../../lib/posts";
+import { getContentFromMd } from "../../utils/posts";
 import { siteTitle } from "../constants";
 import MarkdownContent from "../../components/markdown-content";
 
