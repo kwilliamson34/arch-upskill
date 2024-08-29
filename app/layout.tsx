@@ -1,4 +1,4 @@
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import "../styles/global.css";
@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <GoogleTagManager gtmId="G-R4HM6TPMV5" />
+        <GoogleAnalytics gaId="G-R4HM6TPMV5" />
         <meta
           name="description"
           content="See how Katy learned to build a personal website using Next.js to track her course of study!"
