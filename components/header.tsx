@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className="relative flex items-center justify-between px-8 text-white">
+    <header className="relative flex items-center justify-between text-white sm:px-8">
       <div className="container">
         <div className="absolute inset-0 -z-10 w-full overflow-hidden">
           <Image
