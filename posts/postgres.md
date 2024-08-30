@@ -110,3 +110,9 @@ When data is written to the database, the original table (the clustered index) i
 Indexes are most useful for read-heavy databases in data warehouses that get new data updated on a scheduled basis (off-peak hours), although PostgreSQL 12 adds the ability to rebuild indexes concurrently, which lets you perform a REINDEX operation without blocking any writes to the index. TODO: Unsure if MySQL has this feature.
 
 It's important to benchmark queries with and without indexes to see the performance difference.
+
+### Migrations
+
+Migrations are a way to track changes to your database schema over time. They are used to ensure that the database schema is consistent and up-to-date.
+
+But, they come from a pre-version control era. They can make it hard to understand the history and the final state. TODO more on this

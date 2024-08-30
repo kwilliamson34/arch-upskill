@@ -17,6 +17,7 @@ There has been a boom of AI-powered coding tools. They have been a big topic, as
 - [Replit](https://replit.com/) / [Anthropic](https://docs.anthropic.com/en/docs/welcome) / [Vellum](https://www.vellum.ai/)
 - [Cursor](https://cursor.so/)
 - [Aide](https://codestory.ai/)
+- [Supermaven](https://supermaven.com/)
 
 ### GitHub Copilot
 

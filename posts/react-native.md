@@ -52,7 +52,6 @@ Today I followed the [Expo tutorial](https://docs.expo.dev/get-started/create-a-
 - [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo): turbo repo, expo, nextjs, prisma, tRPC
   - tRPC = TypeScript Remote Procedure Call, an API framework
   - [The “T3 Stack”](https://create.t3.gg/en/introduction) is a web development stack focused on simplicity, modularity, and full-stack typesafety. The core pieces are Next.js and TypeScript. Tailwind CSS is almost always included. If you're doing anything resembling backend, tRPC, Prisma, and NextAuth.js are great additions too.
-  - TODO: watch the full 3 hour video in the T3 link
 - [tamagui](https://tamagui.dev/): tamagui, solito, next, expo
 
 ### Aside/refresher on React hooks
@@ -67,3 +66,11 @@ Today I followed the [Expo tutorial](https://docs.expo.dev/get-started/create-a-
 - [ref](https://react.dev/reference/react/hooks)
 
 TIL: In Strict Mode, React will call your component function twice in order to help you find accidental impurities. This is development-only behavior and does not affect production.
+
+### Putting it all together
+
+While this isn't directly related to React Native, I came across it and found it helpful:
+
+[From 0 to Production - The Modern React Tutorial (RSCs, Next.js, Shadui, Drizzle, TS and more)](https://www.youtube.com/watch?v=d5x0JCZbAJs)
+
+Ignore "software is not easy, boys" (34:32)... Theo - t3.gg has some hot takes but is a prominent youtuber in the space and this video covers a lot of ground.
