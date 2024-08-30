@@ -49,12 +49,12 @@ export default function AboutPage() {
                   hybrid app
                 </a>{" "}
                 back when they were cool. Thus I was launched as a web app
-                engineer. Through my time at Sapient (almost 7 years) and
-                Storyblocks (almost 4 years), I have been lucky enough to work
-                on 6+ distinct web products and 7+ distinct teams. I have
-                formed, stormed, normed, and performed, and it&apos;s taught me
-                so much about how to work with different kinds of people,
-                towards different objectives.
+                engineer. Through my time at Sapient (6 years) and Storyblocks
+                (almost 4 years), I have been lucky enough to work on 6+
+                distinct web products and 7+ distinct teams. I have formed,
+                stormed, normed, and performed, and it&apos;s taught me so much
+                about how to work with different kinds of people, towards
+                different objectives.
               </p>
             </section>
             <section>
@@ -265,6 +265,16 @@ export default function AboutPage() {
                   being perfect. I learn more than enough to be dangerous,
                   explore multiple options, and avoid &quot;one size fits
                   all&quot; decision-making.
+                </li>
+                <li>
+                  <strong>Autonomy, Mastery, Purpose.</strong> AMP is an
+                  important framework for me. I seek it for myself, and I
+                  respect and foster it for my peers. As a leader, I invest in
+                  helping others feel connected to the mission, prepared and
+                  empowered to take proactive autonomous measures. I thrive in
+                  collaborative environments that value learning and initiative,
+                  and where I can contribute meaningfully as an integral part of
+                  the team.
                 </li>
               </ul>
             </section>
