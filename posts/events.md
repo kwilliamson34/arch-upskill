@@ -1,5 +1,5 @@
 ---
 title: "Event driven services"
-subtitle: "Basics and technology options"
+subtitle: "Level up from event provider to fluent architect"
 status: "Not Started"
 ---
