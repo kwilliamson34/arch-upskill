@@ -13,16 +13,18 @@ export default function FunSection({
 
   return (
     <section>
-      <div className="mb-4">
+      <div className="my-4 flex justify-center">
         <button
           onClick={() => setIsFunMode(!isFunMode)}
-          className={`transform rounded px-4 py-2 transition-all duration-300 hover:scale-105 ${
+          className={`transform rounded-full px-6 py-3 font-bold transition-all duration-300 hover:rotate-3 hover:scale-110 focus:outline-none focus:ring-4 ${
             isFunMode
-              ? "bg-yellow-400 text-purple-800 hover:bg-yellow-300"
-              : "bg-blue-500 text-white hover:bg-blue-600"
+              ? "bg-gradient-to-r from-yellow-400 to-orange-500 text-purple-800 hover:from-yellow-300 hover:to-orange-400 focus:ring-yellow-300"
+              : "bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-400 hover:to-purple-500 focus:ring-blue-300"
           }`}
         >
-          {isFunMode ? "More serious plz." : "More fun plz!"}
+          <span className="inline-block transform transition-transform group-hover:scale-110">
+            {isFunMode ? "🧐 Serious Mode" : "🎉 Fun Mode!"}
+          </span>
         </button>
       </div>
       {isFunMode ? (
