@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getAllPosts, sortByDate, getUndated } from "../utils/posts";
+import { sortByDate, getUndated } from "../utils/posts";
 import { siteTitle } from "./constants";
 import Link from "next/link";
 import CalendarItem from "../components/calendar-item";
@@ -22,10 +22,10 @@ export default async function HomePage() {
           <div className="hidden h-6 text-center lg:block">Th</div>
           <div className="hidden h-6 text-center lg:block">F</div>
           {sortByDate().map((post) => (
-            <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
+            <CalendarItem post={post} key={post.id} />
           ))}
           {getUndated().map((post) => (
-            <CalendarItem post={post} key={post.id} className="mb-4 lg:mr-4" />
+            <CalendarItem post={post} key={post.id} />
           ))}
         </div>
       </section>
