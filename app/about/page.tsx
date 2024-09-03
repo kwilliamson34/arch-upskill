@@ -19,27 +19,27 @@ export default function AboutPage() {
 
               <p>
                 Early on, my best subjects in school were English, Math, and
-                Art. While not a stereotypical foundation for software
-                engineering, it ended up being the perfect place for me to
-                start. It definitely explains my obsession with pixel-perfect
-                execution and good copy writing.
+                Art. While an unconventional mix for a future software engineer,
+                it turned out to be a solid foundation. It definitely explains
+                my obsession with pixel-perfect execution and good copy writing.
               </p>
               <p>
-                Having amazing female role models in my family also helped. My
-                mom and aunt studied electrical engineering, and my grandmother
-                was an accomplished painter. This instilled a belief that I
-                could &quot;have it all&quot; and didn&apos;t have to suppress
-                my authenticity to be a good engineer.
+                I was also fortunate to have incredible female role models in my
+                family. My mom and aunt studied electrical engineering, and my
+                grandmother was an accomplished painter. Their achievements
+                showed me that I could combine my creativity with technical
+                expertise, and proved that being well-rounded only enhances my
+                abilities as an engineer.
               </p>
               <p>
                 I started my software engineering journey with an Intro to CS
                 class at <a href="https://compsci.sites.tjhsst.edu/">TJHSST</a>.
-                I was drawn in by writing neat, elegant programs and
-                implementing little games. After briefly toying with Journalism
-                and Chemical Engineering, I applied myself to Computer
-                Engineering in college. I had a few key internships, most
-                memorably, setting up private cloud networks in a server
-                basement where I became briefly addicted to 5-Hour Energy, and
+                I was drawn in by the art of crafting neat, elegant programs and
+                bringing small games to life. After briefly toying with
+                Journalism and Chemical Engineering, I applied myself to
+                Computer Engineering in college. I had a few memorable
+                internships: setting up private cloud networks in a server
+                basement, where I became briefly addicted to 5-Hour Energy; and
                 fumbling through the construction of an immersive{" "}
                 <a
                   href="https://www.mechdyne.com/av-vr-solutions/blog/direct-view-led-technology-the-roi-of-led-displays/"
