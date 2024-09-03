@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import FunSection from "../../components/fun-section";
 import JokeWrapper from "../../components/joke";
 import { siteTitle } from "../constants";
-import Value from "../../components/Value";
+import Value from "../../components/temp";
 
 export const metadata: Metadata = {
   title: `${siteTitle} - About`,
