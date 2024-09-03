@@ -18,10 +18,10 @@ export default function Value({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={clsx("mb-4 overflow-hidden rounded-lg")}>
+    <div className="mb-4 overflow-hidden rounded-lg">
       <button
         className={clsx(
-          "flex w-full items-center justify-between px-4 py-2 text-left text-inherit transition",
+          "flex w-full items-center justify-between px-4 py-2 text-left text-inherit",
           dark
             ? "bg-gray-700 hover:bg-gray-800"
             : "bg-gray-200 hover:bg-gray-300",

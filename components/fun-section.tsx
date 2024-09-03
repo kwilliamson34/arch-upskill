@@ -28,11 +28,11 @@ export default function FunSection({
         </button>
       </div>
       {isFunMode ? (
-        <div className="fun transform rounded-xl border bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 p-6 text-white shadow-lg transition-all duration-500">
+        <div className="fun transform rounded-xl border bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 p-6 text-white shadow-lg transition-all duration-200">
           {funChildren}
         </div>
       ) : (
-        <div className="serious transform rounded-xl border p-6 shadow-lg transition-all duration-500">
+        <div className="serious transform rounded-xl border p-6 shadow-lg transition-all duration-200">
           {seriousChildren}
         </div>
       )}
