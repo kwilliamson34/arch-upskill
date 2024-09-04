@@ -2,7 +2,7 @@
 title: "React Native"
 subtitle: "101 course"
 date: "2024-08-30"
-status: "Done with Todos"
+status: "Done"
 ---
 
 ### Shared concepts with React

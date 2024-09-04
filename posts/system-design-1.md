@@ -2,7 +2,7 @@
 title: "System Design"
 subtitle: "Learning about architectures and patterns from System Design Interview Insiders Vol 1"
 date: "2024-08-05"
-status: "Done with Todos"
+status: "Done"
 ---
 
 Notes taken while reading `System Design Interview – An insider's guide` by Alex Xu, Chapters 1-3
@@ -110,7 +110,6 @@ Overall stick to 4 steps
 - News feed system: feed publishing with notifications, and news feed building
 - Key-value store: distributed hash table; partition with consistent hashing for even data spread; data replication; conflict resolution
 - URL shortener: RESTful API, 301 permanent redirect or 302 analytics on every click, hash table for url map, hash function (base 62 conversion)
-- TODO fill in others
 
 ### Database replication
 

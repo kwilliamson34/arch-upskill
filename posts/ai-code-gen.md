@@ -2,7 +2,7 @@
 title: "AI for code generation"
 subtitle: "Tradeoffs of different tools and workflows"
 date: "2024-08-19"
-status: "Done with Todos"
+status: "Done"
 ---
 
 [Battle of AI coding tools, 2023](https://e2b.dev/blog/github-copilot-vs-cursor-so-vs-aide-battle-of-ai-coding-tools)

@@ -19,17 +19,17 @@ export default function AboutPage() {
 
               <p>
                 Early on, my best subjects in school were English, Math, and
-                Art. While an unconventional mix for a future software engineer,
-                it turned out to be a solid foundation. It definitely explains
-                my obsession with pixel-perfect execution and good copy writing.
+                Art. Was it an unconventional mix for a future software
+                engineer? I&apos;m not sure, but it definitely explains my
+                obsession with pixel-perfect execution, good copy writing, and
+                fibonacci python-turtle.
               </p>
               <p>
-                I was also fortunate to have incredible female role models in my
-                family. My mom and aunt studied electrical engineering, and my
-                grandmother was an accomplished painter. Their achievements
-                showed me that I could combine my creativity with technical
-                expertise, and proved that being well-rounded only enhances my
-                abilities as an engineer.
+                I&aos;m also fortunate to have incredible female role models in
+                my family. My mom and aunt built long careers from electrical
+                engineering, while my grandmother was an accomplished painter.
+                Their success continuously shows me that creativity + technical
+                expertise is unstoppable.
               </p>
               <p>
                 I started my software engineering journey with an Intro to CS
@@ -37,18 +37,19 @@ export default function AboutPage() {
                 I was drawn in by the art of crafting neat, elegant programs and
                 bringing small games to life. After briefly toying with
                 Journalism and Chemical Engineering, I applied myself to
-                Computer Engineering in college. I had a few memorable
-                internships: setting up private cloud networks in a server
-                basement, where I became briefly addicted to 5-Hour Energy; and
-                fumbling through the construction of an immersive{" "}
+                Computer Engineering in undergrad at UVA. I loved Computer
+                Graphics and I railed against Embedded Systems. I had a few
+                memorable internships: setting up private cloud networks in a
+                server basement, where I became briefly addicted to 5-Hour
+                Energy, and fumbling through the construction of an immersive{" "}
                 <a
                   href="https://www.mechdyne.com/av-vr-solutions/blog/direct-view-led-technology-the-roi-of-led-displays/"
                   target="_blank"
                 >
                   VR experience
                 </a>{" "}
-                with Unity. I got my degrees in Computer Science and Computer
-                Engineering at UVA, got my first real job, and built a{" "}
+                with Unity. I got dual degrees in Computer Science and Computer
+                Engineering, got my first real job, and built a{" "}
                 <a
                   href="https://medium.com/@miladd3/avoid-using-apache-cordova-if-you-can-6d1654bba5bd"
                   target="_blank"
@@ -57,6 +58,14 @@ export default function AboutPage() {
                 </a>{" "}
                 back when they were cool. Thus I was launched as a web app
                 engineer.
+              </p>
+              <p>
+                I credit so many peers along the way for feeding my awe and
+                appreciation for software development. Most of all, the peers
+                that got so excited about applying a new tech to our problem
+                that you couldn&apos;t talk them out of it. This is what taught
+                me the most. Constant innovation, and infectious enthusiasm, is
+                what makes this field so fun!
               </p>
             </section>
             <section>

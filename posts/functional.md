@@ -2,7 +2,7 @@
 title: "Level Up on Functional Programming"
 subtitle: "Following rabbit holes"
 date: "2024-08-26"
-status: "Done with Todos"
+status: "Done"
 ---
 
 ### Basics of functional programming
@@ -114,6 +114,6 @@ exports.handler = async (event) => {
 
 Python is a multi-paradigm programming language. It supports procedural, object-oriented, and functional programming.
 
-It is a good choice for coding interviews because you can easily pivot to the paradigm that offers the most elegant solution. TODO: try some leetcode problems in Python.
+It is a good choice for coding interviews because you can easily pivot to the paradigm that offers the most elegant solution.
 
 More to come in Python 101 lesson.

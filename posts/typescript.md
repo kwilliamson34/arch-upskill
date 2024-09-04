@@ -51,10 +51,6 @@ These aspects describe a reified, nominal type system. The types we wrote in the
 
 In TypeScript, it’s better to think of a type as a set of values that share something in common. Because types are just sets, a particular value can belong to many sets at the same time. **In TypeScript, objects are not of a single exact type.**
 
-### Relationship to Functional Programming
-
-[TODO](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html)
-
 ### tsconfig.json
 
 Blew my mind that on creation of an empty tsconfig.json file in my next project, it populated itself. How did it work?
@@ -65,7 +61,7 @@ Depending on the JavaScript runtime environment which you intend to run your cod
 
 In Next, you can Run next dev and next build to automatically install the necessary dependencies and add a tsconfig.json file with the recommended config options. Somehow, without running those commands, but just by creating the file, the framework or editor picked it up and populated it. Note I already had some intellisense extensions installed (ES7+ React, HTML CSS Support, Prettier).
 
-TODO: Next.js includes a custom [TypeScript plugin and type checker](https://nextjs.org/docs/app/building-your-application/configuring/typescript#typescript-plugin), which VSCode and other code editors can use for advanced type-checking and auto-completion.
+Next.js includes a custom [TypeScript plugin and type checker](https://nextjs.org/docs/app/building-your-application/configuring/typescript#typescript-plugin), which VSCode and other code editors can use for advanced type-checking and auto-completion.
 
 ### Composing types
 
@@ -174,5 +170,4 @@ Gradual typing: TypeScript uses the type any whenever it can’t tell what the t
 
 ### Newer versions
 
-TODO try "satisfies"
-Good to know: `satisfies` was added to TypeScript in [4.9](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html). We recommend upgrading to the latest version of TypeScript.
+TODO try "satisfies". `satisfies` was added to TypeScript in [4.9](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html). We recommend upgrading to the latest version of TypeScript.
