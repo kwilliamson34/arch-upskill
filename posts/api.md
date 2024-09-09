@@ -77,4 +77,9 @@ Postman is an API platform for building and using APIs. In addition to REST, the
 
 While GraphOS Explorer [should make Postman unecessary](https://www.apollographql.com/blog/how-to-use-graphql-with-postman) for clean GraphQL systems, Postman is easy to use, and can be a central hub for API contracts across a mixed-schema system.
 
-TODO: write an API and consume it with this app
+### API authorization
+
+- Bearer token: A bearer token is an opaque string that represents the authorization granted to the client by the resource owner. It is typically issued by an authorization server and is used to access protected resources on behalf of the resource owner. Usage of Bearer Tokens Bearer tokens are commonly used in OAuth 2.0 authentication flows. When a client needs to access a protected resource, it includes the bearer token in the Authorization header of the HTTP request.
+- Machine token: Hardware Machine Access Tokens (HMAC) allow you to assign a seat to a physical computer instead of a user. The secret token is never sent over the wire, but instead the message only contains the MAC/signature, which is valid only for that particular message and cannot be copied to a different message.
+- TODO is it worth using Postman with mocks or stubs bc of a secure or protected IP environment
+- TODO: write an API and consume it with this app

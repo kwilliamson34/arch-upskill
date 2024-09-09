@@ -17,7 +17,7 @@ function ProgressIcon({ status }: { status?: string }) {
 
 function Sticky({ post }: { post: PostMetadata }) {
   const stickyColors = {
-    "In Progress": "bg-yellow-100",
+    "In Progress": "bg-pink-100",
     Done: "bg-green-100",
     "Done with Todos": "bg-blue-100",
     "Not Started": "bg-yellow-100",
