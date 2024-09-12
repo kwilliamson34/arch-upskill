@@ -15,7 +15,13 @@ function ProgressIcon({ status }: { status?: string }) {
   ) : null;
 }
 
-function Sticky({ post }: { post: PostMetadata }) {
+function Sticky({
+  post,
+  lessonNumber,
+}: {
+  post: PostMetadata;
+  lessonNumber: number;
+}) {
   const stickyColors = {
     "In Progress": "bg-pink-100",
     Done: "bg-green-100",
@@ -23,17 +29,13 @@ function Sticky({ post }: { post: PostMetadata }) {
     "Not Started": "bg-yellow-100",
   };
 
-  const interactive = post.title !== "Blank";
-
   return (
     <div
       key={post.id}
       className={clsx(
         "relative block h-full overflow-hidden rounded-lg p-4 shadow-lg transition-all duration-300",
-        interactive &&
-          "rotate-0 transform hover:-translate-y-0 hover:rotate-1 hover:shadow-xl",
-        interactive &&
-          "focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+        "rotate-0 transform hover:-translate-y-0 hover:rotate-1 hover:shadow-xl",
+        "focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
         stickyColors[post.status as keyof typeof stickyColors] || "bg-gray-100"
       )}
     >
@@ -42,7 +44,7 @@ function Sticky({ post }: { post: PostMetadata }) {
         <p className="text-lg">{post.title}</p>
         <p className="mb-2 text-sm italic">{post.subtitle}</p>
         <p className="mt-auto flex text-sm text-gray-600">
-          {post.date ? <Date dateString={post.date} /> : "Unscheduled"}
+          {`Lesson ${lessonNumber}`}
           <ProgressIcon status={post.status} />
         </p>
       </div>
@@ -50,18 +52,20 @@ function Sticky({ post }: { post: PostMetadata }) {
   );
 }
 
-export default function CalendarItem({ post }: { post: PostMetadata }) {
-  return post.title === "Blank" ? (
-    <div className="mb-4 hidden lg:mr-4 lg:block">
-      <Sticky post={post} />
-    </div>
-  ) : (
+export default function CalendarItem({
+  post,
+  lessonNumber,
+}: {
+  post: PostMetadata;
+  lessonNumber: number;
+}) {
+  return (
     <Link
       href={`/posts/${post.id}`}
       key={post.id}
       className="mb-4 !text-inherit !no-underline lg:mr-4"
     >
-      <Sticky post={post} />
+      <Sticky post={post} lessonNumber={lessonNumber} />
     </Link>
   );
 }

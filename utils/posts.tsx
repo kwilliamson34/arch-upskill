@@ -43,7 +43,7 @@ export function getNextPrevPost(id: string): {
   next: PostMetadata;
   prev: PostMetadata;
 } {
-  const sortedPostsData = sortByDate().filter((post) => post.title !== "Blank");
+  const sortedPostsData = sortByDate();
   const index = sortedPostsData.findIndex((post) => post.id === id);
   return {
     next: sortedPostsData[index + 1],

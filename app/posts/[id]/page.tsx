@@ -61,6 +61,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
       <h2>{post.subtitle}</h2>
       {post.date && (
         <p className="italic text-gray-700">
+          Updated&nbsp;
           <Date dateString={post.date} /> - {post.status}
         </p>
       )}
